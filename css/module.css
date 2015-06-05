@@ -1,0 +1,112 @@
+/*
+ * ===================================================================================
+ *
+ *	MODULE STYLES
+ *
+ * ===================================================================================
+*/
+/* GENERAL MODULE STYLES */
+.bold {
+  font-weight: bold;
+}
+/* Element Widths */
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-100 {
+  width: 100%;
+}
+/* Text Alignment */
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+/* Visibility */
+.visibility-v {
+  visibility: visible;
+}
+.visibility-h {
+  visibility: hidden;
+}
+/* opacity */
+.opacity-o {
+  opacity: 1;
+}
+.opacity-t {
+  opacity: 0;
+}
+/* Wrapper */
+#wrapper {
+  margin: 0 auto;
+  padding: 40px;
+  width: 1110px;
+}
+/* Tabs */
+.tabs {
+  width: 100%;
+  padding: 1em 1.25em 1em 1.25em;
+}
+.tabs [type="radio"] {
+  display: none;
+}
+.tab-container {
+  position: relative;
+  min-height: 400px;
+  /* customize to fit your needs */
+}
+.tab-menu {
+  line-height: 0;
+}
+.tab-menu ul {
+  margin: 0;
+}
+.tab-menu i {
+  margin-right: 0.75em;
+}
+.tab-marker > li {
+  min-width: 132px;
+}
+.tab-marker label {
+  display: block;
+  padding: 1em 1.5em;
+  background: #444444;
+  font-size: 0.95em;
+  color: #fff;
+  -o-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+.tab-content {
+  width: 100%;
+  display: none;
+  padding: 1em 1.65em 1em 1.65em;
+  position: relative;
+  background: #f7f7f7;
+}
