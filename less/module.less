@@ -6,6 +6,8 @@
  * ===================================================================================
 */
 
+@import url('animation.css');
+
 /* GENERAL MODULE STYLES */
 
 .bold {
@@ -137,13 +139,6 @@
 
 }
 
-.tab-container {
-
-	position: relative;
-	min-height: 400px; /* customize to fit your needs */
-
-}
-
 .tab-menu {
 
 	line-height: 0;
@@ -178,15 +173,14 @@
 		font-size: 0.95em;
 		color: #fff;
 	
-		-o-transform: translateY(4px);
-		-webkit-transform: translateY(4px);
-		    -ms-transform: translateY(4px);
-		        transform: translateY(4px);
-		-o-transition: all 0.25s linear;
-		-webkit-transition: all 0.25s linear;
-		        transition: all 0.25s linear;
-
 	}
+
+}
+
+.tab-content-container {
+
+	-webkit-perspective: 2500px; /* Chrome, Safari, Opera  */
+    perspective: 2500px;
 
 }
 
@@ -195,9 +189,18 @@
 	width: 100%;
 	display: none;
 	padding: 1em 1.65em 1em 1.65em;
-	position: relative;
 	background: rgba(247, 247, 247, 1);
 
+	
+	-webkit-transform-origin: 0% 0%;
+
+	-webkit-animation-duration: 0.75s;
+ 	-o-animation-duration: 0.75s;
+ 	   animation-duration: 0.75s;
+
+ 	-webkit-animation-name: slideUp;
+ 	-o-animation-name: slideUp;
+ 	   animation-name: slideUp;
 	// -webkit-border-bottom-right-radius: 7px;
 	// -moz-border-radius-bottomright: 7px;
 	//         border-bottom-right-radius: 7px;
@@ -207,5 +210,6 @@
 	//         border-bottom-left-radius: 7px;
 
 	// border-top: 2px solid rgb(85, 85, 85);
+
 
 }

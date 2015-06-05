@@ -1,3 +1,4 @@
+@import url('animation.css');
 /*
  * ===================================================================================
  *
@@ -72,11 +73,6 @@
 .tabs [type="radio"] {
   display: none;
 }
-.tab-container {
-  position: relative;
-  min-height: 400px;
-  /* customize to fit your needs */
-}
 .tab-menu {
   line-height: 0;
 }
@@ -95,18 +91,22 @@
   background: #444444;
   font-size: 0.95em;
   color: #fff;
-  -o-transform: translateY(4px);
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  transform: translateY(4px);
-  -o-transition: all 0.25s linear;
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+}
+.tab-content-container {
+  -webkit-perspective: 2500px;
+  /* Chrome, Safari, Opera  */
+  perspective: 2500px;
 }
 .tab-content {
   width: 100%;
   display: none;
   padding: 1em 1.65em 1em 1.65em;
-  position: relative;
   background: #f7f7f7;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: slideUp;
+  -o-animation-name: slideUp;
+  animation-name: slideUp;
 }

@@ -12,14 +12,10 @@
 }
 .tab-marker [type="radio"]:checked ~ label {
   background: #101010;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
 }
 .tab-marker [type="radio"]:checked ~ .tab-content {
-  display: block;
+  display: table-cell;
 }
 .is-tab-active {
-  display: block;
+  display: table-cell;
 }

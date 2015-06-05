@@ -13,7 +13,6 @@ $(document).ready(function() { //if the DOM is ready
 		tab_content.siblings('td').hide(); 
 		tab_content.show();
 		
-
 	});
 
 });
