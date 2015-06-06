@@ -37,7 +37,7 @@ html {
 */
 body {
   margin: 0;
-  background: #EAEAEA;
+  background: #D5D5D5;
   height: 100%;
 }
 /* HTML5 display definitions
@@ -396,6 +396,7 @@ h6 {
   padding: 0;
   font-family: 'Lato', Verdana, 'Arial', sans-serif;
   font-weight: 900;
+  color: #444;
 }
 /* Perfect Fourth Ratio */
 h1 {
@@ -423,6 +424,7 @@ h6 {
 p {
   line-height: 1.5;
   font-size: 0.9em;
+  color: #373737;
 }
 hr {
   clear: both;

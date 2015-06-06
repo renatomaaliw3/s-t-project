@@ -45,6 +45,9 @@
 .text-right {
   text-align: right;
 }
+.text-center {
+  text-align: center;
+}
 /* Visibility */
 .visibility-v {
   visibility: visible;
@@ -68,7 +71,6 @@
 /* Tabs */
 .tabs {
   width: 100%;
-  padding: 1em 1.25em 1em 1.25em;
 }
 .tabs [type="radio"] {
   display: none;
@@ -90,6 +92,7 @@
   padding: 1em 1.5em;
   background: #444444;
   font-size: 0.95em;
+  font-weight: bold;
   color: #fff;
 }
 .tab-content-container {
@@ -102,11 +105,10 @@
   display: none;
   padding: 1em 1.65em 1em 1.65em;
   background: #f7f7f7;
-  -webkit-transform-origin: 0% 0%;
-  -webkit-animation-duration: 0.75s;
-  -o-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-name: slideUp;
-  -o-animation-name: slideUp;
-  animation-name: slideUp;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: hingeUp;
+  -o-animation-name: hingeUp;
+  animation-name: hingeUp;
 }

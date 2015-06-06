@@ -11,10 +11,8 @@
   cursor: pointer;
 }
 .tab-marker [type="radio"]:checked ~ label {
-  background: #101010;
-}
-.tab-marker [type="radio"]:checked ~ .tab-content {
-  display: table-cell;
+  background: #f7f7f7;
+  color: #000;
 }
 .is-tab-active {
   display: table-cell;

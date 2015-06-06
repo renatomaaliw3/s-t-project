@@ -1,3 +1,5 @@
+@import url('animation.css');
+
 /*
  * ===================================================================================
  *
@@ -6,7 +8,6 @@
  * ===================================================================================
 */
 
-@import url('animation.css');
 
 /* GENERAL MODULE STYLES */
 
@@ -86,6 +87,12 @@
 
 }
 
+.text-center {
+
+	text-align: center;
+
+}
+
 /* Visibility */
 
 .visibility-v {
@@ -129,7 +136,6 @@
 .tabs {
 
 	width: 100%;
-	padding: 1em 1.25em 1em 1.25em;
 
 	[type="radio"] {
 
@@ -171,8 +177,9 @@
 		padding: 1em 1.5em;
 		background: rgb(68, 68, 68);
 		font-size: 0.95em;
+		font-weight: bold;
 		color: #fff;
-	
+
 	}
 
 }
@@ -191,16 +198,15 @@
 	padding: 1em 1.65em 1em 1.65em;
 	background: rgba(247, 247, 247, 1);
 
-	
-	-webkit-transform-origin: 0% 0%;
 
-	-webkit-animation-duration: 0.75s;
- 	-o-animation-duration: 0.75s;
- 	   animation-duration: 0.75s;
+	-webkit-animation-duration: 1s;
+ 	-o-animation-duration: 1s;
+ 	   animation-duration: 1s;
 
- 	-webkit-animation-name: slideUp;
- 	-o-animation-name: slideUp;
- 	   animation-name: slideUp;
+ 	-webkit-animation-name: hingeUp;
+ 	-o-animation-name: hingeUp;
+ 	   animation-name: hingeUp;
+
 	// -webkit-border-bottom-right-radius: 7px;
 	// -moz-border-radius-bottomright: 7px;
 	//         border-bottom-right-radius: 7px;
