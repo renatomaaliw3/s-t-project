@@ -1,5 +1,7 @@
 @import url('animation.css');
 
+@tab_content_bg: rgba(247, 247, 247, 1);
+
 /*
  * ===================================================================================
  *
@@ -67,6 +69,14 @@
 
 }
 
+/* margin */
+
+.pull-left-2 {
+
+	margin-left: -2px;
+
+}
+
 /* Text Alignment */
 
 .text-justify {
@@ -123,12 +133,11 @@
 
 /* Wrapper */
 
-#wrapper {
+.container {
 
-	margin: 0 auto;
-	padding: 40px;
-	width: 1110px;
-
+	margin: 30px auto;
+	_width: 1110px;
+	width: 88.5%;
 }
 
 /* Tabs */
@@ -151,7 +160,11 @@
 
 	ul {
 
-		margin: 0;
+		&.skewed-right-margin-left { /* skewed */
+
+			margin-left: 3px;
+
+		}
 
 	}
 
@@ -168,6 +181,12 @@
 	> li {
 	
 		min-width: 132px;
+
+		.skewed-right { /* skewed */
+
+			-webkit-transform: skew(-8deg); 
+
+		}
 
 	}
 
@@ -195,13 +214,8 @@
 
 	width: 100%;
 	display: none;
-	padding: 1em 1.65em 1em 1.65em;
-	background: rgba(247, 247, 247, 1);
-
-
-	-webkit-animation-duration: 1s;
- 	-o-animation-duration: 1s;
- 	   animation-duration: 1s;
+	padding: 1.15em 1.65em 1.25em 1.65em;
+	background: @tab_content_bg;
 
  	-webkit-animation-name: hingeUp;
  	-o-animation-name: hingeUp;
@@ -219,3 +233,5 @@
 
 
 }
+
+/* floated */

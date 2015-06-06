@@ -1,6 +1,36 @@
 /* CSS3 Animations */
 
+.animated { /* normal duration */
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+.animated-fast { /* faster duration */
+
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+.animated-slow { /* slow duration */
+
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+
+
 /* slideUp */
+
 
 @-webkit-keyframes hingeUp {
 
@@ -10,9 +40,9 @@
     	transform: rotateX(-85deg);
 
     	-webkit-transform-origin: 0% 0%;
-		transform-origin: 0% 0%;
+		  transform-origin: 0% 0%;
 
-		opacity: 0.5;
+		  opacity: 0.7;
 
   	}
 
@@ -20,7 +50,8 @@
 
     	-webkit-transform: rotateX(15deg);
     	transform: rotateX(15deg);
-		opacity: 0.75;
+
+		  opacity: 0.8;
 
   	}
 
@@ -29,7 +60,7 @@
     	-webkit-transform: rotateX(-10deg);
     	transform: rotateX(-10deg);
 
-		opacity: 0.85;
+		  opacity: 0.9;
 
   	}
 
@@ -38,7 +69,7 @@
     	-webkit-transform: rotateX(5deg);
     	transform: rotateX(5deg);
 
-		opacity: 0.95;
+		  opacity: 1;
 
   	}
 
@@ -48,9 +79,6 @@
     	transform: rotateX(0);
 
     	-webkit-transform-origin: 0% 0%;
-
-
-	  	opacity: 1; 
 
   	}
 

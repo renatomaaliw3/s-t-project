@@ -9,6 +9,7 @@
 /* tab markers */
 .tab-marker label:hover {
   cursor: pointer;
+  background: #616161;
 }
 .tab-marker [type="radio"]:checked ~ label {
   background: #f7f7f7;
