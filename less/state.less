@@ -1,3 +1,4 @@
+@import url('../less/variables.less');
 @import url('animation.css');
 
 /*
@@ -13,9 +14,8 @@
 
 .tab-marker label:hover {
 
-	cursor: pointer;
 	background: #616161;
-
+	cursor: pointer;
 }
 
 .tab-marker [type="radio"]:checked ~ label {
@@ -28,5 +28,48 @@
 .is-tab-active {
 
 	display: table-cell;
+
+}
+
+/* tab-overlapped */
+
+.tab-overlapped {
+
+	.tab-marker {
+
+		label:hover {
+
+			~ span {
+
+				background: #616161;
+
+			}
+
+		}
+
+		.triangle:hover {
+
+			cursor: pointer;
+
+		}
+
+	}
+
+	[type="radio"]:checked {
+
+		~ label {
+			
+			+span {
+				
+				background: @tab_content_bg;
+				border: 0;
+				z-index: 1000;
+
+			}
+
+		}
+
+	}
+
 
 }

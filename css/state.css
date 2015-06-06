@@ -8,8 +8,8 @@
 */
 /* tab markers */
 .tab-marker label:hover {
-  cursor: pointer;
   background: #616161;
+  cursor: pointer;
 }
 .tab-marker [type="radio"]:checked ~ label {
   background: #f7f7f7;
@@ -17,4 +17,16 @@
 }
 .is-tab-active {
   display: table-cell;
+}
+/* tab-overlapped */
+.tab-overlapped .tab-marker label:hover ~ span {
+  background: #616161;
+}
+.tab-overlapped .tab-marker .triangle:hover {
+  cursor: pointer;
+}
+.tab-overlapped [type="radio"]:checked ~ label + span {
+  background: #f7f7f7;
+  border: 0;
+  z-index: 1000;
 }
