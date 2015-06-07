@@ -28,5 +28,5 @@
 .tab-overlapped [type="radio"]:checked ~ label + span {
   background: #f7f7f7;
   border: 0;
-  z-index: 1000;
+  z-index: 1001;
 }
