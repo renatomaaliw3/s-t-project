@@ -139,7 +139,7 @@
 }
 /* TAB DESIGN 4, OVERLAPPED */
 .tab-overlapped li {
-  margin-right: 25px;
+  margin-right: 20px;
   position: relative;
 }
 .tab-overlapped label {
@@ -153,7 +153,7 @@
   height: 45px;
   right: -25px;
   background: #444444;
-  -webkit-transform: skew(30deg);
+  -webkit-transform: skew(35deg);
   border-right: 1px solid #373737;
   z-index: 500;
 }
