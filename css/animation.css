@@ -1,6 +1,8 @@
 /* CSS3 Animations */
 
-.animated { /* normal duration */
+/* transitions */
+
+.animated { /* normal transition */
 
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -9,7 +11,7 @@
 
 }
 
-.animated-fast { /* faster duration */
+.animated-fast { /* faster transition */
 
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.5s;
@@ -18,7 +20,7 @@
 
 }
 
-.animated-slow { /* slow duration */
+.animated-slow { /* slow transition */
 
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -27,10 +29,9 @@
 
 }
 
+/* end transitions */
 
-
-/* slideUp */
-
+/* hingeUp */
 
 @-webkit-keyframes hingeUp {
 
@@ -192,3 +193,12 @@
 }
 
 /* end animation */
+
+
+.animated-hingeUp {
+
+  -webkit-animation-name: hingeUp;
+  -o-animation-name: hingeUp;
+     animation-name: hingeUp;
+
+}

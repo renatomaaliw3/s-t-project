@@ -60,3 +60,6 @@
 .l-inline-list > li {
   display: inline-block;
 }
+.l-vertical-list > li {
+  display: block;
+}

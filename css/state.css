@@ -16,7 +16,7 @@
   color: #000;
 }
 .is-tab-active {
-  display: table-cell;
+  display: list-item;
 }
 /* tab-overlapped */
 .tab-overlapped .tab-marker label:hover span {

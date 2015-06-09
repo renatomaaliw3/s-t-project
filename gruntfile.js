@@ -6,11 +6,6 @@ module.exports = function(grunt) {
 
 	  		development: {
 	    		
-	    		options: {
-	      		
-	      			paths: ["less"]
-	    		
-	    		},
 		    	files: {
 
 		      		"css/base.css": "less/base.less",
@@ -25,19 +20,39 @@ module.exports = function(grunt) {
 
 	  	},  //end less
 
+	  	cssmin: {
+
+	  		target: {
+
+	  			files:[{
+
+	  				expand: true,
+	  				src:  ["css/*.css"],
+	  				dest: "cssmin/",
+	  				ext:  ".min.css"
+
+	  			}]
+
+	  		}
+
+	  	},	//end cssmin
+
 	  	watch: {
 
 	  		css: {
 
-	  			files: "less/*.less",
+	  			files: ["less/*.less"],
 	  			tasks: ["less"]
 
 	  		}
 
-	  	}
-	});
+	  	
+	  	} //end watch
+
+	}); //end initConfig
 
 	grunt.loadNpmTasks('grunt-contrib-less');
+	//grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-}
+} //end function

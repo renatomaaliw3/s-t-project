@@ -135,8 +135,8 @@
 .container {
 
 	margin: 30px auto;
-	_width: 1110px;
-	width: 88.5%;
+	_width: 1110px; //pixel
+	width: 88.5%;	//percentage
 }
 
 /* Tabs */
@@ -167,11 +167,44 @@
 
 .tab-marker  {
 
+	&.l-inline-list {
+
+		> li {
+		
+			margin-right: 2px;
+			margin-bottom: 1px;
+
+			&:last-child {
+
+				margin-right: 0;
+
+			}
+
+		}
+		
+	}
+
+	&.l-vertical-list {
+
+		> li {
+
+			margin-right: 0;
+			margin-bottom: 2px;
+
+			&:last-child {
+
+				margin-bottom: 0;
+
+			}
+
+		}
+		
+	}
+
 	> li {
 	
 		min-width: 132px;
-		margin-right: 2px;
-
+		
 	}
 
 	label {
@@ -182,6 +215,27 @@
 		font-size: 0.95em;
 		font-weight: bold;
 		color: #fff;
+
+	}
+
+	&.tab-marker-tight {
+
+		> li {
+
+			margin-right: -6px;
+
+		}
+
+	}
+
+	&.tab-marker-rounded-top {
+
+		label {
+
+			border-top-left-radius: @border_radius;
+			border-top-right-radius : @border_radius;
+
+		}
 
 	}
 
@@ -201,10 +255,7 @@
 	padding: 1.15em 1.65em 1.25em 1.65em;
 	background: @tab_content_bg;
 
- 	-webkit-animation-name: hingeUp;
- 	-o-animation-name: hingeUp;
- 	   animation-name: hingeUp;
-}
+} 
 
 /* TAB DESIGN 2, SKEWED */
 
@@ -219,13 +270,6 @@
 	.skewed-right-margin-left { /* skewed */
 
 		margin-left: 3px;
-
-	}
-
-	label {
-
-		border-top-left-radius: @border_radius;
-		border-top-right-radius : @border_radius;
 
 	}
 
@@ -265,7 +309,7 @@
 
 	li {
 
-		margin-right: 20px;
+		margin-right: 18px;
 		position: relative;
 		
 	}
