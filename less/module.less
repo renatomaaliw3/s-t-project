@@ -171,8 +171,7 @@
 
 		> li {
 		
-			margin-right: 2px;
-			margin-bottom: 1px;
+			margin-right: 4px;
 
 			&:last-child {
 
@@ -261,25 +260,20 @@
 
 .tab-skewed {
 
-	.skewed-right {
+	> li {
 
-		-webkit-transform: skew(-8deg); 
-
-	}
-
-	.skewed-right-margin-left { /* skewed */
-
-		margin-left: 3px;
+		-webkit-transform: skew(-10deg);
 
 	}
 
-	.tab-content {
 
-		border-bottom-left-radius: @border_radius;
-		border-bottom-right-radius : @border_radius;
+	&.tab-skewed-r-ml { /* skewed */
+
+		margin-left: 4px;
 
 	}
 
+	
 }
 
 /* TAB DESIGN 3, FLOATED */
@@ -307,11 +301,16 @@
 
 .tab-overlapped {
 
-	li {
+	&.l-inline-list {
 
-		margin-right: 18px;
-		position: relative;
-		
+		> li {
+
+			position: relative;
+			margin-right: 18px;
+			margin-bottom: 0;
+			
+		}
+
 	}
 
 	label {
@@ -320,7 +319,7 @@
 
 	}
 
-	.triangle {
+	.rhombus {
 
 		display: block;
 		position: absolute;

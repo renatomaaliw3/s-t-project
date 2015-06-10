@@ -86,8 +86,7 @@
   margin-right: 0.75em;
 }
 .tab-marker.l-inline-list > li {
-  margin-right: 2px;
-  margin-bottom: 1px;
+  margin-right: 4px;
 }
 .tab-marker.l-inline-list > li:last-child {
   margin-right: 0;
@@ -128,16 +127,12 @@
   background: #f7f7f7;
 }
 /* TAB DESIGN 2, SKEWED */
-.tab-skewed .skewed-right {
-  -webkit-transform: skew(-8deg);
+.tab-skewed > li {
+  -webkit-transform: skew(-10deg);
 }
-.tab-skewed .skewed-right-margin-left {
+.tab-skewed.tab-skewed-r-ml {
   /* skewed */
-  margin-left: 3px;
-}
-.tab-skewed .tab-content {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  margin-left: 4px;
 }
 /* TAB DESIGN 3, FLOATED */
 .tab-floated {
@@ -151,14 +146,15 @@
   border-radius: 6px;
 }
 /* TAB DESIGN 4, OVERLAPPED */
-.tab-overlapped li {
-  margin-right: 18px;
+.tab-overlapped.l-inline-list > li {
   position: relative;
+  margin-right: 18px;
+  margin-bottom: 0;
 }
 .tab-overlapped label {
   border-top-left-radius: 6px;
 }
-.tab-overlapped .triangle {
+.tab-overlapped .rhombus {
   display: block;
   position: absolute;
   bottom: 0;

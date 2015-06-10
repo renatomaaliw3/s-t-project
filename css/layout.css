@@ -59,6 +59,7 @@
 /* list */
 .l-inline-list > li {
   display: inline-block;
+  float: left;
 }
 .l-vertical-list > li {
   display: block;

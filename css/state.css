@@ -19,10 +19,10 @@
   display: list-item;
 }
 /* tab-overlapped */
-.tab-overlapped .tab-marker label:hover span {
+.tab-overlapped label:hover span {
   background: #616161;
 }
-.tab-overlapped .tab-marker .triangle:hover {
+.tab-overlapped .rhombus:hover {
   cursor: pointer;
 }
 .tab-overlapped [type="radio"]:checked ~ label span {
