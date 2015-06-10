@@ -210,10 +210,10 @@
 
 		display: block;
 		padding: 1em 1.5em;
-		background: rgb(68, 68, 68);
+		background: @tab_marker_label_bg;
 		font-size: 0.95em;
 		font-weight: bold;
-		color: #fff;
+		color: @tab_content_bg;
 
 	}
 
@@ -221,7 +221,7 @@
 
 		> li {
 
-			margin-right: -6px;
+			
 
 		}
 
@@ -255,6 +255,58 @@
 	background: @tab_content_bg;
 
 } 
+
+/* TAB DESIGN 1 */
+
+.tab-bordered {
+
+	&.tab-bordered-bb {
+	
+		> li {
+
+			position: relative;
+
+			label {
+
+				border-bottom: @border_bottom solid rgba(0,0,0,0);
+
+				.triangle-pd {
+
+					opacity: 0;
+					border-top: 10px solid @tab_marker_label_bg;
+					border-left: 10px solid rgba(0,0,0,0);
+					border-right: 10px solid rgba(0,0,0,0);
+
+					position: absolute;
+					bottom: -7px;
+					left: 45%;
+					z-index: 6000;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.tab-bordered-bt {
+	
+		> li {
+
+
+			label {
+
+				border-top: @border_top solid rgba(0,0,0,0);
+
+			}
+
+		}
+
+	}
+	
+
+}
 
 /* TAB DESIGN 2, SKEWED */
 
@@ -325,12 +377,10 @@
 		position: absolute;
 		bottom: 0;
 		width: 42px;
-		height: 45px;
+		height: 46px;
 		right: -25px;
-		background: #444444;
+		background: @tab_marker_label_bg;
 		-webkit-transform: skew(35deg);
-		border-right: 1px solid #373737;
-		z-index: 500;
 
 	}
 

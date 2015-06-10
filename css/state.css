@@ -8,25 +8,37 @@
 */
 /* tab markers */
 .tab-marker label:hover {
-  background: #616161;
+  background: #f9f9f9;
+  color: #444444;
   cursor: pointer;
 }
 .tab-marker [type="radio"]:checked ~ label {
-  background: #f7f7f7;
-  color: #000;
+  background: #f9f9f9;
+  color: #2cc185;
 }
 .is-tab-active {
   display: list-item;
 }
+/* tab-bordered */
+.tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label {
+  border-bottom: 5px solid #2cc185;
+}
+.tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label .triangle-pd {
+  opacity: 1;
+}
+.tab-bordered.tab-bordered-bt [type="radio"]:checked ~ label {
+  border-top: 5px solid #2cc185;
+}
 /* tab-overlapped */
 .tab-overlapped label:hover span {
-  background: #616161;
+  background: #f9f9f9;
+  z-index: 10000;
 }
 .tab-overlapped .rhombus:hover {
   cursor: pointer;
 }
 .tab-overlapped [type="radio"]:checked ~ label span {
-  background: #f7f7f7;
+  background: #f9f9f9;
   border: 0;
-  z-index: 1001;
+  z-index: 5000;
 }

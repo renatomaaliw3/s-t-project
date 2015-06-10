@@ -14,14 +14,15 @@
 
 .tab-marker label:hover {
 
-	background: #616161;
+	background: @label_hover_bg;
+	color: @text_color;
 	cursor: pointer;
 }
 
 .tab-marker [type="radio"]:checked ~ label {
 
-	background: #f7f7f7;
-	color: #000;
+	background:  @tab_content_bg;
+	color: @border_color;
 
 }
 
@@ -31,6 +32,47 @@
 
 }
 
+/* tab-bordered */
+
+.tab-bordered {
+
+	&.tab-bordered-bb {
+
+		[type="radio"]:checked {
+
+			~ label {
+				
+				border-bottom: @border_bottom solid @border_color;
+
+				.triangle-pd {
+
+					opacity: 1;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&.tab-bordered-bt {
+
+		[type="radio"]:checked {
+
+			~ label {
+				
+				border-top: @border_bottom solid @border_color;
+
+			}
+
+		}
+
+	}
+
+}
+
+
 /* tab-overlapped */
 
 .tab-overlapped {
@@ -39,7 +81,8 @@
 
 			span {
 
-				background: #616161;
+				background: @tab_content_bg;
+				z-index: 10000;
 
 			}
 
@@ -60,13 +103,12 @@
 				
 				background: @tab_content_bg;
 				border: 0;
-				z-index: 1001;
+				z-index: 5000;
 
 			}
 
 		}
 
 	}
-
 
 }
