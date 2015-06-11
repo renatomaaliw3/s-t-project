@@ -221,7 +221,9 @@
 
 		> li {
 
-			
+			margin-right: -2px;
+  			border-right: 1px solid @tab_content_container_bc;
+  			border-left: 1px solid @tab_content_container_bc;
 
 		}
 
@@ -244,6 +246,14 @@
 
 	-webkit-perspective: 2500px;
     perspective: 2500px;
+
+    &.bordered {
+
+		border-right:1px solid @tab_content_container_bc;
+		border-left: 1px solid @tab_content_container_bc;
+		border-bottom: 1px solid @tab_content_container_bc;
+
+    }
 
 }
 

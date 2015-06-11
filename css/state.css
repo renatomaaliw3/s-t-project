@@ -21,13 +21,13 @@
 }
 /* tab-bordered */
 .tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label {
-  border-bottom: 5px solid #2cc185;
+  border-bottom: 7px solid #2cc185;
 }
 .tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label .triangle-pd {
   opacity: 1;
 }
 .tab-bordered.tab-bordered-bt [type="radio"]:checked ~ label {
-  border-top: 5px solid #2cc185;
+  border-top: 7px solid #2cc185;
 }
 /* tab-overlapped */
 .tab-overlapped label:hover span {

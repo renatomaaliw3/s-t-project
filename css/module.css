@@ -109,6 +109,11 @@
   font-weight: bold;
   color: #f9f9f9;
 }
+.tab-marker.tab-marker-tight > li {
+  margin-right: -2px;
+  border-right: 1px solid rgba(52, 52, 52, 0.1);
+  border-left: 1px solid rgba(52, 52, 52, 0.1);
+}
 .tab-marker.tab-marker-rounded-top label {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -116,6 +121,11 @@
 .tab-content-container {
   -webkit-perspective: 2500px;
   perspective: 2500px;
+}
+.tab-content-container.bordered {
+  border-right: 1px solid rgba(52, 52, 52, 0.1);
+  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-bottom: 1px solid rgba(52, 52, 52, 0.1);
 }
 .tab-content {
   width: 100%;
@@ -128,7 +138,7 @@
   position: relative;
 }
 .tab-bordered.tab-bordered-bb > li label {
-  border-bottom: 5px solid rgba(0, 0, 0, 0);
+  border-bottom: 7px solid rgba(0, 0, 0, 0);
 }
 .tab-bordered.tab-bordered-bb > li label .triangle-pd {
   opacity: 0;
@@ -141,7 +151,7 @@
   z-index: 6000;
 }
 .tab-bordered.tab-bordered-bt > li label {
-  border-top: 5px solid rgba(0, 0, 0, 0);
+  border-top: 7px solid rgba(0, 0, 0, 0);
 }
 /* TAB DESIGN 2, SKEWED */
 .tab-skewed > li {
