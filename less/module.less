@@ -76,7 +76,7 @@
 
 }
 
-/* Text Alignment */
+/* text alignment */
 
 .text-justify {
 
@@ -102,7 +102,7 @@
 
 }
 
-/* Visibility */
+/* visibility */
 
 .visibility-v {
 
@@ -118,19 +118,39 @@
 
 /* opacity */
 
-.opacity-o {
+.opacity-1 {
 
 	opacity: 1;
 
 }
 
-.opacity-t {
+.opacity-0 {
 
 	opacity: 0;
 
 }
 
-/* Wrapper */
+/* border */
+
+.no-border {
+
+	border: 0;
+
+}
+
+.b-t-l-radius {
+	
+	border-top-left-radius: @border_radius;
+
+}
+
+.b-t-r-radius {
+
+	border-top-right-radius: @border_radius;
+
+}
+
+/* wrapper */
 
 .container {
 
@@ -139,15 +159,22 @@
 	width: 88.5%;	//percentage
 }
 
+.bg-transparent {
+
+	background: rgba(0,0,0,0);
+
+}
+
+
 /* Tabs */
 
 .tabs {
 
-	width: 100%;
+	width: 100%; //inherit the width of the container
 
 	[type="radio"] {
 
-		display: none;
+		display: none; //hide radio form element
 
 	}
 
@@ -159,7 +186,7 @@
 
 	i {
 
-		margin-right: 0.75em;
+		margin-right: 0.75em; //font awesome icon
 
 	}
 
@@ -167,7 +194,7 @@
 
 .tab-marker  {
 
-	&.l-inline-list {
+	&.l-inline-list { //display tab-marker horizontally
 
 		> li {
 		
@@ -175,7 +202,7 @@
 
 			&:last-child {
 
-				margin-right: 0;
+				margin-right: 0; //last tab-marker has no margin-right
 
 			}
 
@@ -183,16 +210,16 @@
 		
 	}
 
-	&.l-vertical-list {
+	&.l-vertical-list { //display tab-marker vertically
 
 		> li {
 
-			margin-right: 0;
-			margin-bottom: 2px;
+			margin-right: 0; //no tab-marker margin-right
+			margin-bottom: 2px;  
 
 			&:last-child {
 
-				margin-bottom: 0;
+				margin-bottom: 0; //the last tab-marker has no margin-bottom
 
 			}
 
@@ -202,34 +229,79 @@
 
 	> li {
 	
-		min-width: 132px;
+		min-width: 132px; //minimum width for each tab-markers
 		
 	}
 
-	label {
+	&.default-bg { //default bg for tab-markers
 
-		display: block;
-		padding: 1em 1.5em;
-		background: @tab_marker_label_bg;
-		font-size: 0.95em;
-		font-weight: bold;
-		color: @tab_content_bg;
+		label {
+
+			background: @tab_marker_label_bg;
+			color: @tab_content_bg;
+
+		}
+
 
 	}
 
-	&.tab-marker-tight {
+	label { //general label settings
+
+		display: block;
+		padding: 1em 1.5em;
+		font-size: 0.95em;
+		font-weight: bold;
+
+		
+	}
+
+	&.tab-marker-tight { //remove spacing between tab-markers
 
 		> li {
 
 			margin-right: -2px;
-  			border-right: 1px solid @tab_content_container_bc;
-  			border-left: 1px solid @tab_content_container_bc;
+		
+  			label {
+
+				background: @tab_marker_label_bg;
+				color: @tab_content_bg;
+
+  			}
+		
 
 		}
 
+		&.tab-marker-separator { //add separator for each tab-markers
+
+			> li {
+
+				_border-top: 1px solid @tab_content_container_bc;
+  				border-right: 1px solid @tab_content_container_bc;
+  				border-left: 1px solid @tab_content_container_bc;
+  				_border-bottom: 1px solid @tab_content_container_bc;
+
+				&:first-child {
+
+					border-left: 0; //remove separator on first element
+
+  				}
+
+  				&:last-child {
+
+					border-right: 0; //remove separator on last element
+
+  				}
+
+
+			}
+
+				
+		}
+
+
 	}
 
-	&.tab-marker-rounded-top {
+	&.tab-marker-rounded-top { //???
 
 		label {
 
@@ -242,12 +314,12 @@
 
 }
 
-.tab-content-container {
+.tab-content-container { //this is the tab content container
 
 	-webkit-perspective: 2500px;
     perspective: 2500px;
 
-    &.bordered {
+    &.bordered { //add border to tab content container
 
 		border-right:1px solid @tab_content_container_bc;
 		border-left: 1px solid @tab_content_container_bc;
@@ -257,12 +329,12 @@
 
 }
 
-.tab-content {
+.tab-content { //this is the tab content
 
-	width: 100%;
-	display: none;
+	width: 100%; //inherit the width of the container
+	display: none; //hidden by default
 	padding: 1.15em 1.65em 1.25em 1.65em;
-	background: @tab_content_bg;
+ 	background: @tab_content_bg;
 
 } 
 
@@ -283,13 +355,13 @@
 				.triangle-pd {
 
 					opacity: 0;
-					border-top: 10px solid @tab_marker_label_bg;
-					border-left: 10px solid rgba(0,0,0,0);
-					border-right: 10px solid rgba(0,0,0,0);
+					border-top: 15px solid @tab_marker_label_bg;
+					border-left: 15px solid rgba(0,0,0,0);
+					border-right: 15px solid rgba(0,0,0,0);
 
 					position: absolute;
-					bottom: -7px;
-					left: 45%;
+					bottom: -8px;
+					left: 55px;
 					z-index: 6000;
 
 				}

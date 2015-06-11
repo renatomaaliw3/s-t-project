@@ -12,7 +12,7 @@
   color: #444444;
   cursor: pointer;
 }
-.tab-marker [type="radio"]:checked ~ label {
+.tab-marker.default-bg [type="radio"]:checked ~ label {
   background: #f9f9f9;
   color: #2cc185;
 }
@@ -28,6 +28,8 @@
 }
 .tab-bordered.tab-bordered-bt [type="radio"]:checked ~ label {
   border-top: 7px solid #2cc185;
+  border-left: 0;
+  border-right: 0;
 }
 /* tab-overlapped */
 .tab-overlapped label:hover span {
@@ -41,4 +43,12 @@
   background: #f9f9f9;
   border: 0;
   z-index: 5000;
+}
+.tab-marker.tab-transparent label:hover span {
+  background: #f9f9f9;
+}
+.tab-marker.tab-transparent [type="radio"]:checked ~ label {
+  background: #f9f9f9;
+  color: #2cc185;
+  border: 0;
 }

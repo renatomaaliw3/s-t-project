@@ -19,7 +19,7 @@
 	cursor: pointer;
 }
 
-.tab-marker [type="radio"]:checked ~ label {
+.tab-marker.default-bg [type="radio"]:checked ~ label {
 
 	background:  @tab_content_bg;
 	color: @border_color;
@@ -63,6 +63,8 @@
 			~ label {
 				
 				border-top: @border_bottom solid @border_color;
+				border-left: 0;
+				border-right: 0;
 
 			}
 
@@ -112,3 +114,32 @@
 	}
 
 }
+
+.tab-marker.tab-transparent {
+
+	label:hover {
+
+		span {
+
+			background: @tab_content_bg;
+
+		}
+
+	}
+
+
+	[type="radio"]:checked {
+
+		~ label {
+			
+			background: @tab_content_bg;
+			color: @tab_marker_label_bg;
+			border: 0;
+
+		}
+
+	}
+
+}
+
+

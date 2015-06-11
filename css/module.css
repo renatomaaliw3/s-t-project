@@ -39,7 +39,7 @@
 .pull-left-2 {
   margin-left: -2px;
 }
-/* Text Alignment */
+/* text alignment */
 .text-justify {
   text-align: justify;
 }
@@ -52,7 +52,7 @@
 .text-center {
   text-align: center;
 }
-/* Visibility */
+/* visibility */
 .visibility-v {
   visibility: visible;
 }
@@ -60,17 +60,30 @@
   visibility: hidden;
 }
 /* opacity */
-.opacity-o {
+.opacity-1 {
   opacity: 1;
 }
-.opacity-t {
+.opacity-0 {
   opacity: 0;
 }
-/* Wrapper */
+/* border */
+.no-border {
+  border: 0;
+}
+.b-t-l-radius {
+  border-top-left-radius: 6px;
+}
+.b-t-r-radius {
+  border-top-right-radius: 6px;
+}
+/* wrapper */
 .container {
   margin: 30px auto;
   _width: 1110px;
   width: 88.5%;
+}
+.bg-transparent {
+  background: rgba(0, 0, 0, 0);
 }
 /* Tabs */
 .tabs {
@@ -101,18 +114,34 @@
 .tab-marker > li {
   min-width: 132px;
 }
+.tab-marker.default-bg label {
+  background: #2cc185;
+  color: #f9f9f9;
+}
 .tab-marker label {
   display: block;
   padding: 1em 1.5em;
-  background: #2cc185;
   font-size: 0.95em;
   font-weight: bold;
-  color: #f9f9f9;
 }
 .tab-marker.tab-marker-tight > li {
   margin-right: -2px;
+}
+.tab-marker.tab-marker-tight > li label {
+  background: #2cc185;
+  color: #f9f9f9;
+}
+.tab-marker.tab-marker-tight.tab-marker-separator > li {
+  _border-top: 1px solid rgba(52, 52, 52, 0.1);
   border-right: 1px solid rgba(52, 52, 52, 0.1);
   border-left: 1px solid rgba(52, 52, 52, 0.1);
+  _border-bottom: 1px solid rgba(52, 52, 52, 0.1);
+}
+.tab-marker.tab-marker-tight.tab-marker-separator > li:first-child {
+  border-left: 0;
+}
+.tab-marker.tab-marker-tight.tab-marker-separator > li:last-child {
+  border-right: 0;
 }
 .tab-marker.tab-marker-rounded-top label {
   border-top-left-radius: 6px;
@@ -142,12 +171,12 @@
 }
 .tab-bordered.tab-bordered-bb > li label .triangle-pd {
   opacity: 0;
-  border-top: 10px solid #2cc185;
-  border-left: 10px solid rgba(0, 0, 0, 0);
-  border-right: 10px solid rgba(0, 0, 0, 0);
+  border-top: 15px solid #2cc185;
+  border-left: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid rgba(0, 0, 0, 0);
   position: absolute;
-  bottom: -7px;
-  left: 45%;
+  bottom: -8px;
+  left: 55px;
   z-index: 6000;
 }
 .tab-bordered.tab-bordered-bt > li label {
