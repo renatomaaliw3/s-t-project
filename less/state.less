@@ -14,15 +14,9 @@
 
 .tab-marker label:hover {
 
-	background: @label_hover_bg;
-	color: @text_color;
+	// background: @label_hover_bg;
+	// color: @text_color;
 	cursor: pointer;
-}
-
-.tab-marker.default-bg [type="radio"]:checked ~ label {
-
-	background:  @tab_content_bg;
-	color: @border_color;
 
 }
 
@@ -32,88 +26,124 @@
 
 }
 
-/* tab-bordered */
 
-.tab-bordered {
+.tab-design-1 {
 
-	&.tab-bordered-bb {
+	.tab-marker [type="radio"]:checked ~ label {
 
-		[type="radio"]:checked {
-
-			~ label {
-				
-				border-bottom: @border_bottom solid @border_color;
-
-				.triangle-pd {
-
-					opacity: 1;
-
-				}
-
-			}
-
-		}
-
-	}
-
-	&.tab-bordered-bt {
-
-		[type="radio"]:checked {
-
-			~ label {
-				
-				border-top: @border_bottom solid @border_color;
-				border-left: 0;
-				border-right: 0;
-
-			}
-
-		}
+		background:  @tab_content_bg;
+		color: @border_color;
+		z-index: 10000;
 
 	}
 
 }
 
-
-/* tab-overlapped */
-
-.tab-overlapped {
-
-		label:hover {
-
-			span {
-
-				background: @tab_content_bg;
-				z-index: 10000;
-
-			}
-
-		}
-
-		.rhombus:hover {
-
-			cursor: pointer;
-
-		}
-
+.tab-design-2 {
 
 	[type="radio"]:checked {
 
 		~ label {
-			
-			span {
-				
-				background: @tab_content_bg;
-				border: 0;
-				z-index: 5000;
+
+			background:  @tab_content_bg !important;
+			color: @border_color !important;
+			z-index: 10000;
+
+			span:before {
+
+				background: @tab_content_bg !important;
 
 			}
+
 
 		}
 
 	}
 
 }
+
+// /* tab-bordered */
+
+// .tab-bordered {
+
+// 	&.tab-bordered-bb {
+
+// 		[type="radio"]:checked {
+
+// 			~ label {
+				
+// 				border-bottom: @border_bottom solid @border_color;
+
+// 				.triangle-pd {
+
+// 					opacity: 1;
+
+// 				}
+
+// 			}
+
+// 		}
+
+// 	}
+
+// 	&.tab-bordered-bt {
+
+// 		[type="radio"]:checked {
+
+// 			~ label {
+				
+// 				border-top: @border_bottom solid @border_color;
+// 				border-left: 0;
+// 				border-right: 0;
+
+// 			}
+
+// 		}
+
+// 	}
+
+// }
+
+
+/* tab-overlapped */
+
+// .tab-overlapped {
+
+// 		label:hover {
+
+// 			span {
+
+// 				background: @tab_content_bg;
+// 				z-index: 10000;
+
+// 			}
+
+// 		}
+
+// 		.rhombus:hover {
+
+// 			cursor: pointer;
+
+// 		}
+
+
+// 	[type="radio"]:checked {
+
+// 		~ label {
+			
+// 			span {
+				
+// 				background: @tab_content_bg;
+// 				border: 0;
+// 				z-index: 5000;
+
+// 			}
+
+// 		}
+
+// 	}
+
+// }
 
 .tab-marker.tab-transparent {
 

@@ -8,42 +8,25 @@
 */
 /* tab markers */
 .tab-marker label:hover {
-  background: #f9f9f9;
-  color: #444444;
   cursor: pointer;
-}
-.tab-marker.default-bg [type="radio"]:checked ~ label {
-  background: #f9f9f9;
-  color: #2cc185;
 }
 .is-tab-active {
   display: list-item;
 }
-/* tab-bordered */
-.tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label {
-  border-bottom: 7px solid #2cc185;
-}
-.tab-bordered.tab-bordered-bb [type="radio"]:checked ~ label .triangle-pd {
-  opacity: 1;
-}
-.tab-bordered.tab-bordered-bt [type="radio"]:checked ~ label {
-  border-top: 7px solid #2cc185;
-  border-left: 0;
-  border-right: 0;
-}
-/* tab-overlapped */
-.tab-overlapped label:hover span {
+.tab-design-1 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9;
+  color: #2cc185;
   z-index: 10000;
 }
-.tab-overlapped .rhombus:hover {
-  cursor: pointer;
+.tab-design-2 [type="radio"]:checked ~ label {
+  background: #f9f9f9 !important;
+  color: #2cc185 !important;
+  z-index: 10000;
 }
-.tab-overlapped [type="radio"]:checked ~ label span {
-  background: #f9f9f9;
-  border: 0;
-  z-index: 5000;
+.tab-design-2 [type="radio"]:checked ~ label span:before {
+  background: #f9f9f9 !important;
 }
+/* tab-overlapped */
 .tab-marker.tab-transparent label:hover span {
   background: #f9f9f9;
 }
