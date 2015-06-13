@@ -13,11 +13,13 @@
 .is-tab-active {
   display: list-item;
 }
+/* tab-design-1 */
 .tab-design-1 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9;
   color: #2cc185;
   z-index: 10000;
 }
+/* tab-design-2 */
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9 !important;
   color: #2cc185 !important;
@@ -29,22 +31,47 @@
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label span:before {
   background: #f9f9f9 !important;
 }
-.tab-design-2 .tab-marker.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:before {
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:before {
   background: #2cc185;
 }
-.tab-design-2 .tab-marker.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:after {
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:after {
   display: none !important;
 }
-.tab-design-2 .tab-marker.tab-marker-f-n-l > li:nth-child(2) [type="radio"]:checked ~ label span:after,
-.tab-design-2 .tab-marker.tab-marker-f-n-l > li:nth-child(3) [type="radio"]:checked ~ label span:after {
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(2) [type="radio"]:checked ~ label span:after,
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(3) [type="radio"]:checked ~ label span:after {
   display: none;
 }
-/* tab-overlapped */
-.tab-marker.tab-transparent label:hover span {
-  background: #f9f9f9;
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:last-child [type="radio"]:checked ~ label span:before {
+  display: none;
 }
-.tab-marker.tab-transparent [type="radio"]:checked ~ label {
-  background: #f9f9f9;
-  color: #2cc185;
-  border: 0;
+.tab-design-2 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:last-child [type="radio"]:checked ~ label span:after {
+  background: #2cc185;
+}
+/* tab-design-3 */
+.tab-design-3 .tab-marker [type="radio"]:checked ~ label {
+  background: #f9f9f9 !important;
+  color: #2cc185 !important;
+  z-index: 10000;
+}
+.tab-design-3 .tab-marker [type="radio"]:checked ~ label span:after {
+  background: #f9f9f9 !important;
+}
+.tab-design-3 .tab-marker [type="radio"]:checked ~ label span:before {
+  background: #f9f9f9 !important;
+}
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:before {
+  background: #2cc185;
+}
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:after {
+  background: #2cc185;
+}
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(2) [type="radio"]:checked ~ label span:after,
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(3) [type="radio"]:checked ~ label span:after,
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(2) [type="radio"]:checked ~ label span:before,
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:nth-child(3) [type="radio"]:checked ~ label span:before {
+  display: none;
+}
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:last-child [type="radio"]:checked ~ label span:before,
+.tab-design-3 .tab-marker.tab-marker-overlap.tab-marker-f-n-l > li:last-child [type="radio"]:checked ~ label span:after {
+  background: #2cc185;
 }

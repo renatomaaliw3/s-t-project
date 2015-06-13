@@ -26,6 +26,7 @@
 
 }
 
+/* tab-design-1 */
 
 .tab-design-1 {
 
@@ -38,6 +39,8 @@
 	}
 
 }
+
+/* tab-design-2 */
 
 .tab-design-2 {
 
@@ -65,9 +68,12 @@
 
 			}
 
-		}
+		} // :checked
 
-		&.tab-marker-f-n-l {
+
+		&.tab-marker-overlap {
+
+			&.tab-marker-f-n-l {
 
 			> li:first-child {
 
@@ -94,7 +100,7 @@
 			}
 
 			> li:nth-child(2), 
-			> li:nth-child(3) { //if there are more tab-markers
+			> li:nth-child(3) { //if there are more tab-markers, > li:nth-child(4) and so on.
 
 				[type="radio"]:checked {
 
@@ -112,120 +118,149 @@
 
 			}
 
+			> li:last-child {
+
+				[type="radio"]:checked {
+
+					~ label {
+
+						span:before {
+
+							display: none;
+							
+						}
+
+						span:after {
+
+							background: @tab_marker_label_bg;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			
+		} // tab-marker-f-n-l
+
+
 		}
+
 
 	} // tab-marker
 
 }
 
-// /* tab-bordered */
+/* tab-design-3 */
 
-// .tab-bordered {
+.tab-design-3 {
 
-// 	&.tab-bordered-bb {
+	.tab-marker { 
 
-// 		[type="radio"]:checked {
+		[type="radio"]:checked {
 
-// 			~ label {
-				
-// 				border-bottom: @border_bottom solid @border_color;
+			~ label {
 
-// 				.triangle-pd {
+				background:  @tab_content_bg !important;
+				color: @border_color !important;
+				z-index: 10000;
 
-// 					opacity: 1;
+				span:after {
 
-// 				}
+					background: @tab_content_bg !important;
 
-// 			}
+				}
 
-// 		}
+				span:before {
 
-// 	}
+					background: @tab_content_bg !important;
 
-// 	&.tab-bordered-bt {
+				}
 
-// 		[type="radio"]:checked {
+			}
 
-// 			~ label {
-				
-// 				border-top: @border_bottom solid @border_color;
-// 				border-left: 0;
-// 				border-right: 0;
-
-// 			}
-
-// 		}
-
-// 	}
-
-// }
+		} // :checked
 
 
-/* tab-overlapped */
+		&.tab-marker-overlap {
 
-// .tab-overlapped {
+			&.tab-marker-f-n-l {
 
-// 		label:hover {
+				> li:first-child {
 
-// 			span {
+					[type="radio"]:checked {
 
-// 				background: @tab_content_bg;
-// 				z-index: 10000;
+						~ label {
 
-// 			}
+							span:before {
 
-// 		}
+								background: @tab_marker_label_bg;
 
-// 		.rhombus:hover {
+							}
 
-// 			cursor: pointer;
+							span:after {
 
-// 		}
+								background: @tab_marker_label_bg;
 
+							}
 
-// 	[type="radio"]:checked {
+						}
 
-// 		~ label {
-			
-// 			span {
-				
-// 				background: @tab_content_bg;
-// 				border: 0;
-// 				z-index: 5000;
+					}
 
-// 			}
+				}
 
-// 		}
+				> li:nth-child(2), 
+				> li:nth-child(3) { //if there are more tab-markers, > li:nth-child(4) and so on.
 
-// 	}
+					[type="radio"]:checked {
 
-// }
+						~ label {
 
-.tab-marker.tab-transparent {
+							span {
 
-	label:hover {
+								&:after, &:before {
 
-		span {
+									display: none;
 
-			background: @tab_content_bg;
+								}
+
+							}	
+
+						}
+
+					}
+
+				}
+
+				> li:last-child {
+
+					[type="radio"]:checked {
+
+						~ label {
+
+							span { 
+
+								&:before, &:after {
+
+									background: @tab_marker_label_bg
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			} // tab-marker-f-n-l
 
 		}
 
-	}
-
-
-	[type="radio"]:checked {
-
-		~ label {
-			
-			background: @tab_content_bg;
-			color: @tab_marker_label_bg;
-			border: 0;
-
-		}
-
-	}
+	} // tab-marker
 
 }
-
-
