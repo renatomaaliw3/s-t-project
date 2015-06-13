@@ -136,3 +136,37 @@
 	} // tab-marker
 
 }
+
+/* tab-design-5 */
+
+.tab-design-5 {
+
+	.tab-marker { 
+
+		[type="radio"]:checked {
+
+			~ label {
+
+				background:  @tab_content_bg !important;
+				color: @border_color !important;
+				z-index: 10000;
+
+				span:after {
+
+					background: @tab_content_bg !important;
+
+				}
+
+				span:before {
+
+					background: @tab_content_bg !important;
+
+				}
+
+			}
+
+		} // :checked
+
+	} // tab-marker
+
+}

@@ -205,22 +205,6 @@
 .tab-design-2 .tab-marker.tab-marker-tight.tab-marker-overlap > li {
   margin-right: -8px;
 }
-.tab-design-2 .tab-marker.tab-marker-tight.tab-marker-overlap.tab-marker-f-n-l {
-  margin-left: 13px;
-}
-.tab-design-2 .tab-marker.tab-marker-tight.tab-marker-overlap.tab-marker-f-n-l > li:first-child {
-  margin-left: 1px;
-}
-.tab-design-2 .tab-marker.tab-marker-tight.tab-marker-overlap.tab-marker-f-n-l > li:first-child label span:before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  bottom: 0;
-  width: 20px;
-  height: 100%;
-  background: #2cc185;
-  -webkit-transform: skewX(-16deg);
-}
 .tab-design-2 .tab-marker.tab-marker-rounded-top label {
   margin-right: 1px;
   border-top-left-radius: 6px;
@@ -313,7 +297,7 @@
   margin-right: 72px;
 }
 .tab-design-4 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 36px;
+  margin-left: 40px;
 }
 .tab-design-4 .tab-marker.l-inline-list > li:last-child {
   margin-right: 0;
@@ -364,6 +348,78 @@
 }
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-overlap > li {
   margin-right: 32px;
+}
+.tab-design-5 .tab-marker.l-inline-list > li {
+  margin-right: 26px;
+}
+.tab-design-5 .tab-marker.l-inline-list > li:last-child {
+  margin-right: 0;
+}
+.tab-design-5 .tab-marker.l-vertical-list > li {
+  margin-right: 0;
+  margin-bottom: 2px;
+}
+.tab-design-5 .tab-marker.l-vertical-list > li:last-child {
+  margin-bottom: 0;
+}
+.tab-design-5 .tab-marker label {
+  position: relative;
+  display: block;
+  padding: 1em 1.75em 1em 1.5em;
+  font-size: 0.95em;
+  font-weight: bold;
+  background: #2cc185;
+  color: #f9f9f9;
+}
+.tab-design-5 .tab-marker label span:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 110%;
+  height: 20px;
+  background: #2cc185;
+  z-index: -10000;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+.tab-design-5 .tab-marker label span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  width: 110%;
+  height: 20px;
+  background: #2cc185;
+  z-index: -10000;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+.tab-design-5 .tab-marker.tab-marker-tight > li {
+  margin-right: 14px;
+  border-left: 0;
+}
+.tab-design-5 .tab-marker.tab-marker-tight > li label {
+  background: #2cc185;
+  color: #f9f9f9;
+}
+.tab-design-5 .tab-marker.tab-marker-tight.tab-marker-separator > li label {
+  border-right: 1px solid rgba(52, 52, 52, 0.1);
+  border-left: 1px solid rgba(52, 52, 52, 0.1);
+}
+.tab-design-5 .tab-marker.tab-marker-tight.tab-marker-separator > li:first-child {
+  border-left: 0;
+}
+.tab-design-5 .tab-marker.tab-marker-tight.tab-marker-separator > li:last-child {
+  border-right: 0;
+}
+.tab-design-5 .tab-marker.tab-marker-tight.tab-marker-overlap > li {
+  margin-right: -8px;
+}
+.tab-design-5 .tab-marker.tab-marker-rounded-top label {
+  margin-right: 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 /* tab-content-container */
 .tab-content-container {

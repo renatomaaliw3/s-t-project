@@ -454,40 +454,8 @@
 
 				}
 
-				&.tab-marker-f-n-l {
-
-					margin-left: 13px;
-
-				
-					> li:first-child {
-						
-						margin-left: 1px;
-
-						label {
-
-							span:before {
-								
-								content:"";
-								position: absolute;
-								left: -8px;
-								bottom: 0;
-								width: 20px;
-								height: 100%;
-								background: @tab_marker_label_bg;
-
-								-webkit-transform: skewX(-16deg);
-
-							}
-
-						}
-
-					}
-
-				}
-
 			}
 
-			
 		}
 
 		&.tab-marker-rounded-top { // add border radius to top-left and top-right
@@ -729,7 +697,7 @@
 
 				&:first-child {
 
-					margin-left: 36px;	
+					margin-left: 40px;	
 
 				}
 
@@ -841,6 +809,164 @@
 
 } //END TAB DESIGN 4
 
+// TAB DESIGN 5
+
+.tab-design-5 {
+
+	.tab-marker  {
+
+		&.l-inline-list { //display tab-marker horizontally
+
+			> li {
+
+				margin-right: 26px;
+
+				&:last-child {
+
+					margin-right: 0; //last tab-marker has no margin-right
+
+				}
+
+			}
+	
+		}
+
+		&.l-vertical-list { //display tab-marker vertically
+
+			> li {
+
+				margin-right: 0; //no tab-marker margin-right
+				margin-bottom: 2px; 
+
+				&:last-child {
+
+					margin-bottom: 0; //the last tab-marker has no margin-bottom
+
+				}
+
+			}
+			
+		}
+
+		label { //general label settings
+
+			position: relative;
+			display: block;
+			padding: 1em 1.75em 1em 1.5em;
+			font-size: 0.95em;
+			font-weight: bold;
+
+			background: @tab_marker_label_bg; //default background for tab-markers, greenish
+			color: @tab_content_bg; //whitish
+
+			span:before {
+
+				content:"";
+				position: absolute;
+				top: 10%;
+				left: -5%;
+				width: 110%;
+				height: 20px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-top-left-radius: 150px;
+				border-top-right-radius: 150px;
+
+			}
+
+			span:after {
+
+				content:"";
+				position: absolute;
+				top: 50%;
+				left: -5%;
+				width: 110%;
+				height: 20px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-bottom-left-radius: 150px;
+				border-bottom-right-radius: 150px;
+
+			}
+
+		}
+
+		//remove spacing between tab-markers,  tab-marker-tigh is required to activate tab-marker-separator
+
+		&.tab-marker-tight {
+
+			> li {
+
+				margin-right: 14px;
+				border-left: 0;
+			
+	  			label {
+
+					background: @tab_marker_label_bg;
+					color: @tab_content_bg;
+
+	  			}
+			
+
+			}
+
+			&.tab-marker-separator { //add separator for each tab-markers
+
+				> li {
+
+
+					label {
+
+		  				border-right: 1px solid @tab_content_container_bc;
+		  				border-left: 1px solid @tab_content_container_bc;
+		  				
+					}
+					
+
+	  				&:first-child {
+
+						border-left: 0;
+
+	  				}
+
+	  				&:last-child {
+
+						border-right: 0;
+
+	  				}
+
+				}
+		
+			}
+
+			&.tab-marker-overlap { //tab-marker-overalp is required to active .tab-marker-f-n-l
+
+				> li {
+
+					margin-right: -8px;
+
+				}
+
+			}
+
+		}
+
+		&.tab-marker-rounded-top { // add border radius to top-left and top-right
+
+			label {
+
+				margin-right: 1px;
+				border-top-left-radius: @border_radius;
+				border-top-right-radius : @border_radius;
+
+			}
+			
+		}
+
+	} // tab-marker
+
+} // END TAB DESIGN 5
+
 
 /* tab-content-container */
 
@@ -868,133 +994,4 @@
 
 } 
 
-// /* TAB DESIGN 1 */
 
-// .tab-bordered {
-
-// 	&.tab-bordered-bb {
-	
-// 		> li {
-
-// 			position: relative;
-
-// 			label {
-
-// 				border-bottom: @border_bottom solid rgba(0,0,0,0);
-
-// 				.triangle-pd {
-
-// 					opacity: 0;
-// 					border-top: 15px solid @tab_marker_label_bg;
-// 					border-left: 15px solid rgba(0,0,0,0);
-// 					border-right: 15px solid rgba(0,0,0,0);
-
-// 					position: absolute;
-// 					bottom: -8px;
-// 					left: 55px;
-// 					z-index: 6000;
-
-// 				}
-
-// 			}
-
-// 		}
-
-// 	}
-
-// 	&.tab-bordered-bt {
-	
-// 		> li {
-
-
-// 			label {
-
-// 				border-top: @border_top solid rgba(0,0,0,0);
-
-// 			}
-
-// 		}
-
-// 	}
-	
-
-// }
-
-// /* TAB DESIGN 2, SKEWED */
-
-// .tab-skewed {
-
-// 	> li {
-
-// 		-webkit-transform: skew(-10deg);
-
-// 	}
-
-
-// 	&.tab-skewed-r-ml { /* skewed */
-
-// 		margin-left: 4px;
-
-// 	}
-
-	
-// }
-
-// /* TAB DESIGN 3, FLOATED */
-
-// .tab-floated {
-
-// 	border-collapse: separate;
-// 	border-spacing: 0 3px;
-
-// 	label {
-
-// 		border-radius: @border_radius;
-
-// 	}
-
-// 	.tab-content {
-
-// 		border-radius: @border_radius;
-
-// 	}
-	
-// }
-
-// /* TAB DESIGN 4, OVERLAPPED */
-
-// .tab-overlapped {
-
-// 	&.l-inline-list {
-
-// 		> li {
-
-// 			position: relative;
-// 			margin-right: 18px;
-// 			margin-bottom: 0;
-			
-// 		}
-
-// 	}
-
-// 	label {
-
-// 		border-top-left-radius: @border_radius;
-
-// 	}
-
-// 	.rhombus {
-
-// 		display: block;
-// 		position: absolute;
-// 		bottom: 0;
-// 		width: 42px;
-// 		height: 46px;
-// 		right: -25px;
-// 		background: @tab_marker_label_bg;
-// 		-webkit-transform: skew(35deg);
-
-// 	}
-
-
-// }

@@ -53,3 +53,15 @@
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label .svg-right {
   fill: #f9f9f9;
 }
+/* tab-design-5 */
+.tab-design-5 .tab-marker [type="radio"]:checked ~ label {
+  background: #f9f9f9 !important;
+  color: #2cc185 !important;
+  z-index: 10000;
+}
+.tab-design-5 .tab-marker [type="radio"]:checked ~ label span:after {
+  background: #f9f9f9 !important;
+}
+.tab-design-5 .tab-marker [type="radio"]:checked ~ label span:before {
+  background: #f9f9f9 !important;
+}
