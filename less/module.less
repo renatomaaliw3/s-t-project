@@ -421,23 +421,25 @@
 			background: @tab_marker_label_bg; //default background for tab-markers, greenish
 			color: @tab_content_bg; //whitish
 	
-			span:before {
+			span:after {
 
 				content:"";
 				position: absolute;
 				right: -10px;
 				bottom: 0;
 				width: 20px;
-				height: 46px;
+				height: 100%;
 				background: @tab_marker_label_bg;;
 
-				-webkit-transform: skewX(20deg);
+				-webkit-transform: skewX(16deg);
 
 			}
 
 		}
 
-		&.tab-marker-tight { //remove spacing between tab-markers
+		//remove spacing between tab-markers, required for tab-marker-overlap, tab-marker-separator
+
+		&.tab-marker-tight { 
 
 			> li {
 
@@ -454,28 +456,34 @@
 
 			}
 
-			&.tab-marker-rounded-f-n-l {
+			&.tab-marker-f-n-l {
+
+				margin-left: 13px;
 
 				> li:first-child {
+					
+					margin-left: 1px;
 
 					label {
 
-						border-top-left-radius: @border_radius;
-					
+
+						span:before {
+							
+							content:"";
+							position: absolute;
+							left: -8px;
+							bottom: 0;
+							width: 20px;
+							height: 100%;
+							background: @tab_marker_label_bg;
+
+							-webkit-transform: skewX(-16deg);
+
+						}
+
 					}
 
 				}
-
-				> li:last-child {
-
-					label {
-
-						border-top-right-radius: @border_radius;
-					
-					}
-
-				}
-
 
 			}
 
@@ -486,11 +494,9 @@
 
 					label {
 
-						_border-top: 1px solid @tab_content_container_bc;
 		  				border-right: 1px solid @tab_content_container_bc;
 		  				border-left: 1px solid @tab_content_container_bc;
-		  				_border-bottom: 1px solid @tab_content_container_bc;
-
+		  				
 					}
 					
 
@@ -532,6 +538,12 @@
 				border-top-right-radius : @border_radius;
 
 				span:before {
+
+					border-top-left-radius: @border_radius;
+
+				}
+
+				span:after {
 
 					border-top-right-radius: @border_radius;
 

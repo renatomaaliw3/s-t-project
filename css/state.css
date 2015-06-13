@@ -18,13 +18,26 @@
   color: #2cc185;
   z-index: 10000;
 }
-.tab-design-2 [type="radio"]:checked ~ label {
+.tab-design-2 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9 !important;
   color: #2cc185 !important;
   z-index: 10000;
 }
-.tab-design-2 [type="radio"]:checked ~ label span:before {
+.tab-design-2 .tab-marker [type="radio"]:checked ~ label span:after {
   background: #f9f9f9 !important;
+}
+.tab-design-2 .tab-marker [type="radio"]:checked ~ label span:before {
+  background: #f9f9f9 !important;
+}
+.tab-design-2 .tab-marker.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:before {
+  background: #2cc185;
+}
+.tab-design-2 .tab-marker.tab-marker-f-n-l > li:first-child [type="radio"]:checked ~ label span:after {
+  display: none !important;
+}
+.tab-design-2 .tab-marker.tab-marker-f-n-l > li:nth-child(2) [type="radio"]:checked ~ label span:after,
+.tab-design-2 .tab-marker.tab-marker-f-n-l > li:nth-child(3) [type="radio"]:checked ~ label span:after {
+  display: none;
 }
 /* tab-overlapped */
 .tab-marker.tab-transparent label:hover span {

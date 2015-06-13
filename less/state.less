@@ -41,24 +41,80 @@
 
 .tab-design-2 {
 
-	[type="radio"]:checked {
+	.tab-marker { 
 
-		~ label {
+		[type="radio"]:checked {
 
-			background:  @tab_content_bg !important;
-			color: @border_color !important;
-			z-index: 10000;
+			~ label {
 
-			span:before {
+				background:  @tab_content_bg !important;
+				color: @border_color !important;
+				z-index: 10000;
 
-				background: @tab_content_bg !important;
+				span:after {
+
+					background: @tab_content_bg !important;
+
+				}
+
+				span:before {
+
+					background: @tab_content_bg !important;
+
+				}
 
 			}
 
+		}
+
+		&.tab-marker-f-n-l {
+
+			> li:first-child {
+
+				[type="radio"]:checked {
+
+					~ label {
+
+						span:before {
+
+							background: @tab_marker_label_bg;
+
+						}
+
+						span:after {
+
+							display: none !important;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			> li:nth-child(2), 
+			> li:nth-child(3) { //if there are more tab-markers
+
+				[type="radio"]:checked {
+
+					~ label {
+
+						span:after {
+
+							display: none;
+
+						}
+
+					}
+
+				}
+
+			}
 
 		}
 
-	}
+	} // tab-marker
 
 }
 
