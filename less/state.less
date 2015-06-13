@@ -70,85 +70,6 @@
 
 		} // :checked
 
-
-		&.tab-marker-overlap {
-
-			&.tab-marker-f-n-l {
-
-			> li:first-child {
-
-				[type="radio"]:checked {
-
-					~ label {
-
-						span:before {
-
-							background: @tab_marker_label_bg;
-
-						}
-
-						span:after {
-
-							display: none !important;
-
-						}
-
-					}
-
-				}
-
-			}
-
-			> li:nth-child(2), 
-			> li:nth-child(3) { //if there are more tab-markers, > li:nth-child(4) and so on.
-
-				[type="radio"]:checked {
-
-					~ label {
-
-						span:after {
-
-							display: none;
-
-						}
-
-					}
-
-				}
-
-			}
-
-			> li:last-child {
-
-				[type="radio"]:checked {
-
-					~ label {
-
-						span:before {
-
-							display: none;
-							
-						}
-
-						span:after {
-
-							background: @tab_marker_label_bg;
-
-						}
-
-					}
-
-				}
-
-			}
-
-			
-		} // tab-marker-f-n-l
-
-
-		}
-
-
 	} // tab-marker
 
 }
@@ -183,83 +104,34 @@
 
 		} // :checked
 
+	} // tab-marker
 
-		&.tab-marker-overlap {
+}
 
-			&.tab-marker-f-n-l {
+/* tab-design-4 */
 
-				> li:first-child {
+.tab-design-4 {
 
-					[type="radio"]:checked {
+	.tab-marker { 
 
-						~ label {
+		[type="radio"]:checked {
 
-							span:before {
+			~ label {
 
-								background: @tab_marker_label_bg;
+				background:  @tab_content_bg !important;
+				color: @border_color !important;
+				z-index: 10000;
 
-							}
+				.svg-left, .svg-right {
 
-							span:after {
-
-								background: @tab_marker_label_bg;
-
-							}
-
-						}
-
-					}
+					fill: @tab_content_bg;
 
 				}
 
-				> li:nth-child(2), 
-				> li:nth-child(3) { //if there are more tab-markers, > li:nth-child(4) and so on.
+				
+			}
 
-					[type="radio"]:checked {
-
-						~ label {
-
-							span {
-
-								&:after, &:before {
-
-									display: none;
-
-								}
-
-							}	
-
-						}
-
-					}
-
-				}
-
-				> li:last-child {
-
-					[type="radio"]:checked {
-
-						~ label {
-
-							span { 
-
-								&:before, &:after {
-
-									background: @tab_marker_label_bg
-
-								}
-
-							}
-
-						}
-
-					}
-
-				}
-
-			} // tab-marker-f-n-l
-
-		}
+		} // :checked
 
 	} // tab-marker
 

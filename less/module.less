@@ -274,31 +274,6 @@
 
 			}
 
-			&.tab-marker-rounded-f-n-l {
-
-				> li:first-child {
-
-					label {
-
-						border-top-left-radius: @border_radius;
-					
-					}
-
-				}
-
-				> li:last-child {
-
-					label {
-
-						border-top-right-radius: @border_radius;
-					
-					}
-
-				}
-
-
-			}
-
 			&.tab-marker-separator { //add separator for each tab-markers
 
 				> li {
@@ -739,6 +714,132 @@
 	}
 
 } //END TAB DESIGN 3
+
+// TAB DESIGN 4, SVG
+
+.tab-design-4 {
+
+	.tab-marker  {
+
+		&.l-inline-list { //display tab-marker horizontally
+
+			> li {
+			
+				margin-right: 72px;
+
+				&:first-child {
+
+					margin-left: 36px;	
+
+				}
+
+				&:last-child {
+
+					margin-right: 0; //last tab-marker has no margin-right
+
+				}
+
+			}
+			
+		}
+
+		&.l-vertical-list { //display tab-marker vertically
+
+			> li {
+
+				margin-right: 0; //no tab-marker margin-right
+				margin-bottom: 2px;  
+
+				&:last-child {
+
+					margin-bottom: 0; //the last tab-marker has no margin-bottom
+
+				}
+
+			}
+			
+		}
+
+		label { //general label settings
+
+			position: relative;
+			display: block;
+			padding: 1em 1.5em;
+			font-size: 0.95em;
+			font-weight: bold;
+
+			background: @tab_marker_label_bg; //default background for tab-markers, greenish
+			color: @tab_content_bg; //whitish
+
+			svg {
+
+				position: absolute;
+				height: 100%;
+				fill: @tab_marker_label_bg;
+
+				&.svg-left {
+
+					bottom: 0;
+					left: -44px;
+					width: 45px;
+					
+				}
+
+				&.svg-right {
+
+					bottom: 0;
+					right: -44px;
+					width: 45px;
+					-webkit-transform: rotateY(180deg);
+
+				}
+				
+			}
+		}
+
+		&.tab-marker-tight { //remove spacing between tab-markers
+
+			> li {
+
+				margin-right: 50px;
+				border-left: 0;
+			
+	  			label {
+
+					background: @tab_marker_label_bg;
+					color: @tab_content_bg;
+
+	  			}
+			
+			}
+
+			&.tab-marker-separator {
+				
+				svg {
+
+					stroke-width: 1px;
+					stroke: @tab_content_container_bc;
+
+				}
+
+
+			}
+
+			&.tab-marker-overlap {
+
+				> li {
+
+					margin-right: 32px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+} //END TAB DESIGN 4
 
 
 /* tab-content-container */
