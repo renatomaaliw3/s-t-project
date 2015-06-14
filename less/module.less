@@ -159,11 +159,7 @@
 	width: 88.5%;	//percentage
 }
 
-.bg-transparent {
 
-	background: rgba(0,0,0,0);
-
-}
 
 
 /* Tabs */
@@ -200,6 +196,26 @@
 			min-height: 45px;
 
 	}
+
+	label { //general label settings
+
+		position: relative;
+		display: block;
+		padding: 1em 1.5em;
+		font-size: 0.95em;
+		font-weight: bold;
+
+		background: @tab_marker_label_bg; //default background for tab-markers, greenish
+		color: @tab_content_bg; //whitish
+
+			
+	}
+
+}
+
+.tab-marker-transparent {
+
+	background: rgba(0,0,0,0);
 
 }
 
@@ -243,21 +259,7 @@
 			
 		}
 
-		label { //general label settings
-
-			position: relative;
-			display: block;
-			padding: 1em 1.5em;
-			font-size: 0.95em;
-			font-weight: bold;
-
-			background: @tab_marker_label_bg; //default background for tab-markers, greenish
-			color: @tab_content_bg; //whitish
-
-			
-		}
-
-		&.tab-marker-tight { //remove spacing between tab-markers
+		&.tab-marker-tight { //reduce margins between tab-markers
 
 			> li {
 
@@ -270,7 +272,6 @@
 					color: @tab_content_bg;
 
 	  			}
-			
 
 			}
 
@@ -280,10 +281,8 @@
 
 					label {
 
-						_border-top: 1px solid @tab_content_container_bc;
 		  				border-right: 1px solid @tab_content_container_bc;
 		  				border-left: 1px solid @tab_content_container_bc;
-		  				_border-bottom: 1px solid @tab_content_container_bc;
 
 					}
 					
@@ -373,15 +372,6 @@
 
 		label { //general label settings
 
-			position: relative;
-			display: block;
-			padding: 1em 1.75em 1em 1.5em;
-			font-size: 0.95em;
-			font-weight: bold;
-
-			background: @tab_marker_label_bg; //default background for tab-markers, greenish
-			color: @tab_content_bg; //whitish
-	
 			span:after {
 
 				content:"";
@@ -532,15 +522,6 @@
 		}
 
 		label { //general label settings
-
-			position: relative;
-			display: block;
-			padding: 1em 1.5em;
-			font-size: 0.95em;
-			font-weight: bold;
-
-			background: @tab_marker_label_bg; //default background for tab-markers, greenish
-			color: @tab_content_bg; //whitish
 
 			span:after {
 
@@ -730,15 +711,6 @@
 
 		label { //general label settings
 
-			position: relative;
-			display: block;
-			padding: 1em 1.5em;
-			font-size: 0.95em;
-			font-weight: bold;
-
-			background: @tab_marker_label_bg; //default background for tab-markers, greenish
-			color: @tab_content_bg; //whitish
-
 			svg {
 
 				position: absolute;
@@ -821,9 +793,9 @@
 
 				margin-right: 26px;
 
-				&:last-child {
+				&:first-child {
 
-					margin-right: 0; //last tab-marker has no margin-right
+					margin-left: 0; //last tab-marker has no margin-right
 
 				}
 
@@ -850,42 +822,94 @@
 
 		label { //general label settings
 
-			position: relative;
-			display: block;
-			padding: 1em 1.75em 1em 1.5em;
-			font-size: 0.95em;
-			font-weight: bold;
-
-			background: @tab_marker_label_bg; //default background for tab-markers, greenish
-			color: @tab_content_bg; //whitish
-
-			span:before {
+			/* leaf */
+			span.leaf:before {
 
 				content:"";
 				position: absolute;
-				top: 10%;
-				left: -5%;
+				top: 46%;
+				left: -4.75%;
 				width: 110%;
-				height: 20px;
+				height: 12px;
 				background: @tab_marker_label_bg;
 				z-index: -10000;
-				border-top-left-radius: 150px;
-				border-top-right-radius: 150px;
+				border-top-left-radius: 250px;
+				border-top-right-radius: 250px;
 
 			}
 
-			span:after {
+			span.leaf:after {
+
+				content:"";
+				position: absolute;
+				bottom: 46%;
+				left: -4.75%;
+				width: 110%;
+				height: 12px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-bottom-left-radius: 250px;
+				border-bottom-right-radius: 250px;
+
+			}
+
+			/* picket */
+
+			span.picket:before {
+
+				content:"";
+				position: absolute;
+				top: 23%;
+				left: -4.75%;
+				width: 110%;
+				height: 12px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-radius: 150px;
+
+			}
+
+			span.picket:after {
+
+				content:"";
+				position: absolute;
+				bottom: 23%;
+				left: -4.75%;
+				width: 110%;
+				height: 12px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-radius: 150px;
+
+			}
+
+			/* x */
+
+			span.wing:before {
 
 				content:"";
 				position: absolute;
 				top: 50%;
-				left: -5%;
+				left: -4.75%;
 				width: 110%;
-				height: 20px;
+				height: 12px;
 				background: @tab_marker_label_bg;
 				z-index: -10000;
-				border-bottom-left-radius: 150px;
-				border-bottom-right-radius: 150px;
+				border-radius: 10px 10px 20px 20px;
+				
+			}
+
+			span.wing:after {
+
+				content:"";
+				position: absolute;
+				bottom: 51%;
+				left: -6.75%;
+				width: 113%;
+				height: 12px;
+				background: @tab_marker_label_bg;
+				z-index: -10000;
+				border-radius: 20px 20px 50px 50px;
 
 			}
 
@@ -897,7 +921,7 @@
 
 			> li {
 
-				margin-right: 14px;
+				margin-right: 13px;
 				border-left: 0;
 			
 	  			label {
@@ -906,7 +930,6 @@
 					color: @tab_content_bg;
 
 	  			}
-			
 
 			}
 
@@ -924,15 +947,22 @@
 					
 
 	  				&:first-child {
+						
+						label {
+							border-left: 0;
 
-						border-left: 0;
-
+						}
+						
 	  				}
 
 	  				&:last-child {
 
-						border-right: 0;
+						label {
+							
+							border-right: 0;
 
+						}
+						
 	  				}
 
 				}
@@ -943,7 +973,7 @@
 
 				> li {
 
-					margin-right: -8px;
+					margin-right: -2px;
 
 				}
 
