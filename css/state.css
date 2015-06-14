@@ -14,7 +14,8 @@
   display: list-item;
 }
 /* tab-design-1 */
-.tab-design-1 .tab-marker [type="radio"]:checked ~ label {
+.tab-design-1 .tab-marker [type="radio"]:checked ~ label,
+.tab-design-6 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9;
   color: #2cc185;
   z-index: 10000;
