@@ -160,8 +160,6 @@
 }
 
 
-
-
 /* Tabs */
 
 .tabs {
@@ -207,15 +205,8 @@
 
 		background: @tab_marker_label_bg; //default background for tab-markers, greenish
 		color: @tab_content_bg; //whitish
-
 			
 	}
-
-}
-
-.tab-marker-transparent {
-
-	background: rgba(0,0,0,0);
 
 }
 
@@ -275,7 +266,19 @@
 
 			}
 
-			&.tab-marker-separator { //add separator for each tab-markers
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: 1px solid rgba(0,0,0,0) !important;
+					color: @text_color;
+
+				}
+
+			}
+
+			&.tab-marker-tight-separator { //add separator for each tab-markers
 
 				> li {
 
@@ -303,7 +306,7 @@
 		
 			}
 
-			&.tab-marker-overlap {
+			&.tab-marker-tight-overlap {
 
 				> li {
 
@@ -388,7 +391,7 @@
 
 		}
 
-		//remove spacing between tab-markers,  tab-marker-tigh is required to activate tab-marker-separator
+		//remove spacing between tab-markers,  tab-marker-tigh is required to activate tab-marker-tight-separator
 
 		&.tab-marker-tight {
 
@@ -403,14 +406,30 @@
 					color: @tab_content_bg;
 
 	  			}
-			
+
+	  		}
+
+  			&.tab-marker-tight-transparent {
+		
+				label {
+
+					background: rgba(0,0,0,0) !important;
+					border: none !important;
+					color: @text_color;
+
+					span:after {
+
+						background: rgba(0,0,0,0);
+
+					}
+
+				}
 
 			}
 
-			&.tab-marker-separator { //add separator for each tab-markers
+			&.tab-marker-tight-separator { //add separator for each tab-markers
 
 				> li {
-
 
 					label {
 
@@ -419,7 +438,6 @@
 		  				
 					}
 					
-
 	  				&:first-child {
 						
 						label {
@@ -439,7 +457,7 @@
 		
 			}
 
-			&.tab-marker-overlap { //tab-marker-overalp is required to active .tab-marker-f-n-l
+			&.tab-marker-tight-overlap { //tab-marker-overalp is required to active .tab-marker-f-n-l
 
 				> li {
 
@@ -449,7 +467,7 @@
 
 			}
 
-		}
+		} //end tab-marker-tight
 
 		&.tab-marker-rounded-top { // add border radius to top-left and top-right
 
@@ -473,7 +491,7 @@
 
 			}
 			
-		}
+		} // tab-marker-rounded-top
 
 	} // tab-marker
 
@@ -572,7 +590,34 @@
 			
 			}
 
-			&.tab-marker-separator { //add separator for each tab-markers
+			&.tab-marker-tight-transparent {
+
+				> li {
+
+					label {
+
+						background: rgba(0,0,0,0);
+						border: none;
+						color: @text_color;
+
+						span {
+
+							&:before, &:after {
+								
+								border: none !important;
+								background: rgba(0,0,0,0);
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.tab-marker-tight-separator { //add separator for each tab-markers
 
 				> li {
 
@@ -602,7 +647,7 @@
 		
 			}
 
-			&.tab-marker-overlap {
+			&.tab-marker-tight-overlap {
 
 				> li {
 
@@ -722,12 +767,33 @@
 
 					background: @tab_marker_label_bg;
 					color: @tab_content_bg;
+					border: none;
+
+	  			}
+
+	  			
+			}
+
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: none!important;
+					color: @text_color;
+
+				}
+
+				svg {
+
+					fill: rgba(0,0,0,0);
 
 	  			}
 			
+
 			}
 
-			&.tab-marker-separator {
+			&.tab-marker-tight-separator {
 				
 				svg {
 
@@ -739,7 +805,7 @@
 
 			}
 
-			&.tab-marker-overlap {
+			&.tab-marker-tight-overlap {
 
 				> li {
 
@@ -922,7 +988,7 @@
 
 		}
 
-		//remove spacing between tab-markers,  tab-marker-tigh is required to activate tab-marker-separator
+		//remove spacing between tab-markers,  tab-marker-tigh is required to activate tab-marker-tight-separator
 
 		&.tab-marker-tight {
 
@@ -940,7 +1006,29 @@
 
 			}
 
-			&.tab-marker-separator { //add separator for each tab-markers
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: 1px solid rgba(0,0,0,0) !important;
+					color: @text_color;
+
+					span {
+
+						&:before, &:after {
+
+							background: none;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			&.tab-marker-tight-separator { //add separator for each tab-markers
 
 				> li {
 
@@ -956,6 +1044,7 @@
 	  				&:first-child {
 						
 						label {
+
 							border-left: 0;
 
 						}
@@ -966,7 +1055,7 @@
 
 						label {
 							
-							border-right: 0;
+							_border-right: 0;
 
 						}
 						
@@ -976,7 +1065,7 @@
 		
 			}
 
-			&.tab-marker-overlap { //tab-marker-overalp is required to active .tab-marker-f-n-l
+			&.tab-marker-tight-overlap { //tab-marker-overalp is required to active .tab-marker-f-n-l
 
 				> li {
 
@@ -1050,6 +1139,7 @@
 			
 		}
 
+
 		&.tab-marker-tight { //reduce margins between tab-markers
 
 			> li {
@@ -1066,7 +1156,19 @@
 
 			}
 
-			&.tab-marker-separator { //add separator for each tab-markers
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: 1px solid rgba(0,0,0,0) !important;
+					color: @text_color;
+
+				}
+
+			}
+
+			&.tab-marker-tight-separator { //add separator for each tab-markers
 
 				> li {
 
@@ -1094,7 +1196,7 @@
 		
 			}
 
-			&.tab-marker-overlap {
+			&.tab-marker-tight-overlap {
 
 				> li {
 
