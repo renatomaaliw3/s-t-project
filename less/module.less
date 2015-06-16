@@ -11,7 +11,7 @@
 
 
 /* GENERAL MODULE STYLES */
-
+ 
 .bold {
 
 	font-weight: bold;
@@ -221,7 +221,7 @@
 
 			> li {
 			
-				margin-right: 4px;
+				margin-right: 10px;
 
 				&:last-child {
 
@@ -291,9 +291,13 @@
 					
 
 	  				&:first-child {
+						
+						label {
+							
+							border-left: 0;
 
-						border-left: 0;
-
+						}
+						
 	  				}
 
 	  				&:last-child {
@@ -632,8 +636,12 @@
 					}
 					
 	  				&:first-child {
+						
+						label {
 
-						border-left: 0;
+							border-left: 0;
+
+						}
 
 	  				}
 
@@ -1181,8 +1189,13 @@
 					
 
 	  				&:first-child {
+						
+						label {
+							
+							border-left: 0;
 
-						border-left: 0;
+						}
+						
 
 	  				}
 
@@ -1223,6 +1236,138 @@
 	}
 
 } //END TAB DESIGN 6
+
+// TAB DESIGN 7
+
+.tab-design-7 {
+
+	.tab-marker  {
+
+		&.l-inline-list { //display tab-marker horizontally
+
+			> li {
+			
+				margin-right: 10px;
+
+				&:last-child {
+
+					margin-right: 0; //last tab-marker has no margin-right
+
+				}
+
+				label {
+
+					border-top-right-radius: 20px;
+				
+				}
+
+			}
+			
+		}
+
+		&.l-vertical-list { //display tab-marker vertically
+
+			> li {
+
+				margin-right: 0; //no tab-marker margin-right
+				margin-bottom: 2px;  
+
+				&:last-child {
+
+					margin-bottom: 0; //the last tab-marker has no margin-bottom
+
+				}
+
+			}
+			
+		}
+
+		&.tab-marker-tight { //reduce margins between tab-markers
+
+			> li {
+
+				margin-right: 2px;
+				border-left: 0;
+			
+	  			label {
+
+					background: @tab_marker_label_bg;
+					color: @tab_content_bg;
+
+	  			}
+
+			}
+
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: 1px solid rgba(0,0,0,0) !important;
+					color: @text_color;
+
+				}
+
+			}
+
+			&.tab-marker-tight-separator { //add separator for each tab-markers
+
+				> li {
+
+					label {
+
+		  				border-right: 1px solid @tab_content_container_bc;
+		  				border-left: 1px solid @tab_content_container_bc;
+
+					}
+					
+
+	  				&:first-child {
+
+	  					label {
+
+							border-left: 0;
+
+						}
+
+	  				}
+
+	  				&:last-child {
+
+						border-right: 0;
+
+	  				}
+
+				}
+		
+			}
+
+			&.tab-marker-tight-overlap {
+
+				> li {
+
+					margin-right: -6px;
+
+				}
+
+			}
+
+		}
+
+		&.tab-marker-rounded-top { //???
+
+			label {
+
+				margin-right: 1px;
+				border-top-left-radius: 20px;
+
+			}
+			
+		}
+
+	}
+
+} //END TAB DESIGN 7
 
 
 /* tab-content-container */
