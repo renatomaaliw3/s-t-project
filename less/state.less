@@ -34,7 +34,7 @@
 
 		background:  @tab_content_bg;
 		color: @border_color;
-		z-index: 10000;
+		z-index: 100000;
 
 	}
 
@@ -140,6 +140,40 @@
 /* tab-design-5 */
 
 .tab-design-5 {
+
+	.tab-marker { 
+
+		[type="radio"]:checked {
+
+			~ label {
+
+				background:  @tab_content_bg !important;
+				color: @border_color !important;
+				z-index: 10000;
+
+				span:after {
+
+					background: @tab_content_bg !important;
+
+				}
+
+				span:before {
+
+					background: @tab_content_bg !important;
+
+				}
+
+			}
+
+		} // :checked
+
+	} // tab-marker
+
+}
+
+/* tab-design-8 */
+
+.tab-design-8 {
 
 	.tab-marker { 
 

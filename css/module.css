@@ -76,11 +76,22 @@
 .b-t-r-radius {
   border-top-right-radius: 6px;
 }
-/* wrapper */
+#header {
+  margin: 30px auto 0 auto;
+  width: 88.5%;
+}
+/* tab-main-container */
 .tab-main-container {
   margin: 30px auto;
   _width: 1110px;
   width: 88.5%;
+}
+.tab-main-container-padded {
+  padding: 1em;
+  background: #29b27b;
+}
+.tab-main-container-rounded {
+  border-radius: 6px;
 }
 /* Tabs */
 .tabs {
@@ -88,6 +99,10 @@
 }
 .tabs [type="radio"] {
   display: none;
+}
+.tabs-rounded-top {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .tab-menu {
   line-height: 0;
@@ -135,14 +150,15 @@
   color: #444444;
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  _border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:last-child {
-  border-right: 0;
+  _border-right: 0;
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: -6px;
@@ -202,7 +218,7 @@
   border-right: 0;
 }
 .tab-design-2 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 .tab-design-2 .tab-marker.tab-marker-rounded-top label {
   margin-right: 1px;
@@ -270,9 +286,9 @@
   background: rgba(0, 0, 0, 0);
 }
 .tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label span:before {
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
-.tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
+.tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label span:before {
   border-left: 0;
 }
 .tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:last-child {
@@ -581,10 +597,73 @@
   margin-right: 1px;
   border-top-left-radius: 20px;
 }
+.tab-design-8 .tab-marker.l-inline-list > li {
+  margin-right: 26px;
+}
+.tab-design-8 .tab-marker.l-inline-list > li:last-child {
+  margin-right: 0;
+}
+.tab-design-8 .tab-marker.l-vertical-list > li {
+  margin-right: 0;
+  margin-bottom: 2px;
+}
+.tab-design-8 .tab-marker.l-vertical-list > li:last-child {
+  margin-bottom: 0;
+}
+.tab-design-8 .tab-marker label span:after {
+  content: "";
+  position: absolute;
+  background: #2cc185;
+  right: -7px;
+  top: 0;
+  width: 14px;
+  height: 50%;
+  -webkit-transform: skewX(28deg);
+}
+.tab-design-8 .tab-marker label span:before {
+  content: "";
+  position: absolute;
+  background: #2cc185;
+  right: -13px;
+  bottom: 0;
+  width: 14px;
+  height: 50%;
+}
+.tab-design-8 .tab-marker.tab-marker-tight > li {
+  margin-right: 18px;
+  border-left: 0;
+}
+.tab-design-8 .tab-marker.tab-marker-tight > li label {
+  background: #2cc185;
+  color: #f9f9f9;
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label {
+  background: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+  color: #444444;
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label span:before,
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label span:after {
+  background: rgba(0, 0, 0, 0);
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
+  border-right: 1px solid rgba(52, 52, 52, 0.1);
+  border-left: 1px solid rgba(52, 52, 52, 0.1);
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
+  border-left: 0;
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:last-child {
+  border-right: 0;
+}
+.tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
+  margin-right: 0;
+}
 /* tab-content-container */
 .tab-content-container {
   -webkit-perspective: 2500px;
   perspective: 2500px;
+  clear: both;
 }
 .tab-content-container.bordered {
   border-right: 1px solid rgba(52, 52, 52, 0.1);

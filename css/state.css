@@ -19,7 +19,7 @@
 .tab-design-7 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9;
   color: #2cc185;
-  z-index: 10000;
+  z-index: 100000;
 }
 /* tab-design-2 */
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label {
@@ -65,5 +65,17 @@
   background: #f9f9f9 !important;
 }
 .tab-design-5 .tab-marker [type="radio"]:checked ~ label span:before {
+  background: #f9f9f9 !important;
+}
+/* tab-design-8 */
+.tab-design-8 .tab-marker [type="radio"]:checked ~ label {
+  background: #f9f9f9 !important;
+  color: #2cc185 !important;
+  z-index: 10000;
+}
+.tab-design-8 .tab-marker [type="radio"]:checked ~ label span:after {
+  background: #f9f9f9 !important;
+}
+.tab-design-8 .tab-marker [type="radio"]:checked ~ label span:before {
   background: #f9f9f9 !important;
 }
