@@ -150,27 +150,23 @@
 
 }
 
-#header {
+#wrapper {
 
-	margin: 30px auto 0 auto;
 	width: 88.5%;
+	_width: 1110px; //pixel
+	margin: 30px auto 0 auto;
 
 }
 
+#header, .tab-main-container {
 
-/* tab-main-container */
-
-.tab-main-container {
-
-	margin: 30px auto;
-	_width: 1110px; //pixel
-	width: 88.5%;	//percentage
-
+	width: 100%;
+	
 }
 
 .tab-main-container-padded {
 
-	padding: 1em;
+	padding: 0.5em;
 	background: darken(@tab_marker_label_bg, 3.5%);
 	
 }
@@ -219,9 +215,10 @@
 
 	> li {
 		
-			min-width: 132px; //minimum width for each tab-markers
-			min-height: 45px;
-
+		min-width: 132px; //minimum width for each tab-markers
+		min-height: 45px;
+		
+		
 	}
 
 	label { //general label settings
@@ -234,7 +231,33 @@
 
 		background: @tab_marker_label_bg; //default background for tab-markers, greenish
 		color: @tab_content_bg; //whitish
-			
+
+		-webkit-transition: all 0.1s ease-in-out;
+
+		i {
+
+			-webkit-transition: all 0.1s ease-in-out;
+
+		}
+
+		span {
+
+			-webkit-transition: all 0.1s ease-in-out;
+
+			&:after, &:before {
+
+				-webkit-transition: all 0.1s ease-in-out;
+
+			}
+
+		}
+
+		svg {
+	
+			-webkit-transition: all 0.1s ease-in-out;
+
+		}
+
 	}
 
 }

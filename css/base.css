@@ -17,6 +17,12 @@ rule {
 }
 
 end rule */
+/* body */
+/* font */
+/* tab-marker */
+/* border */
+/* texts */
+/* hover bg */
 /* Use border-box sizing in all elements */
 * {
   -webkit-box-sizing: border-box;
@@ -26,7 +32,7 @@ end rule */
   box-sizing: border-box;
 }
 html {
-  font-family: 'Verdana', sans-serif, sans-serif;
+  font-family: 'Open Sans', Verdana, sans-serif, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -395,7 +401,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: sans-serif, 'Arial', sans-serif;
+  font-family: 'Open Sans', sans-serif, 'Arial', sans-serif;
   font-weight: 900;
   color: #444;
 }

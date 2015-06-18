@@ -1,4 +1,10 @@
 @import url('animation.css');
+/* body */
+/* font */
+/* tab-marker */
+/* border */
+/* texts */
+/* hover bg */
 /*
  * ===================================================================================
  *
@@ -76,18 +82,17 @@
 .b-t-r-radius {
   border-top-right-radius: 6px;
 }
-#header {
-  margin: 30px auto 0 auto;
+#wrapper {
   width: 88.5%;
-}
-/* tab-main-container */
-.tab-main-container {
-  margin: 30px auto;
   _width: 1110px;
-  width: 88.5%;
+  margin: 30px auto 0 auto;
+}
+#header,
+.tab-main-container {
+  width: 100%;
 }
 .tab-main-container-padded {
-  padding: 1em;
+  padding: 0.5em;
   background: #29b27b;
 }
 .tab-main-container-rounded {
@@ -122,6 +127,20 @@
   font-weight: bold;
   background: #2cc185;
   color: #f9f9f9;
+  -webkit-transition: all 0.1s ease-in-out;
+}
+.tab-marker label i {
+  -webkit-transition: all 0.1s ease-in-out;
+}
+.tab-marker label span {
+  -webkit-transition: all 0.1s ease-in-out;
+}
+.tab-marker label span:after,
+.tab-marker label span:before {
+  -webkit-transition: all 0.1s ease-in-out;
+}
+.tab-marker label svg {
+  -webkit-transition: all 0.1s ease-in-out;
 }
 .tab-design-1 .tab-marker.l-inline-list > li {
   margin-right: 10px;
