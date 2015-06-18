@@ -14,7 +14,18 @@
 */
 /* tab markers */
 .tab-marker label:hover {
+  background: #f9f9f9 !important;
+  color: #444444 !important;
   cursor: pointer;
+  -webkit-transition: color 0.3s ease-in;
+  z-index: 200000;
+}
+.tab-marker label:hover span:before,
+.tab-marker label:hover span:after {
+  background: #f9f9f9 !important;
+}
+.tab-marker label:hover svg {
+  fill: #f9f9f9 !important;
 }
 .is-tab-active {
   display: list-item;
@@ -25,7 +36,7 @@
 .tab-design-7 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9;
   color: #2cc185;
-  z-index: 100000;
+  z-index: 10000;
 }
 /* tab-design-2 */
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label {
@@ -51,10 +62,11 @@
 .tab-design-3 .tab-marker [type="radio"]:checked ~ label span:before {
   background: #f9f9f9 !important;
 }
-/* tab-design-4 */
+/* tab-design-4, 9, 10, 11 */
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-9 .tab-marker [type="radio"]:checked ~ label,
-.tab-design-10 .tab-marker [type="radio"]:checked ~ label {
+.tab-design-10 .tab-marker [type="radio"]:checked ~ label,
+.tab-design-11 .tab-marker [type="radio"]:checked ~ label {
   background: #f9f9f9 !important;
   color: #2cc185 !important;
   z-index: 10000;
@@ -62,9 +74,11 @@
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label .svg-left,
 .tab-design-9 .tab-marker [type="radio"]:checked ~ label .svg-left,
 .tab-design-10 .tab-marker [type="radio"]:checked ~ label .svg-left,
+.tab-design-11 .tab-marker [type="radio"]:checked ~ label .svg-left,
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label .svg-right,
 .tab-design-9 .tab-marker [type="radio"]:checked ~ label .svg-right,
-.tab-design-10 .tab-marker [type="radio"]:checked ~ label .svg-right {
+.tab-design-10 .tab-marker [type="radio"]:checked ~ label .svg-right,
+.tab-design-11 .tab-marker [type="radio"]:checked ~ label .svg-right {
   fill: #f9f9f9;
 }
 /* tab-design-5 */

@@ -171,6 +171,15 @@
 	
 }
 
+
+.tab-main-container-padded-1 {
+
+	padding: 1em;
+	background: darken(@tab_marker_label_bg, 3.5%);
+	
+}
+
+
 .tab-main-container-rounded {
 
 	border-radius: @border_radius;
@@ -216,7 +225,7 @@
 	> li {
 		
 		min-width: 132px; //minimum width for each tab-markers
-		min-height: 45px;
+		_min-height: 45px;
 		
 		
 	}
@@ -226,27 +235,31 @@
 		position: relative;
 		display: block;
 		padding: 1em 1.5em;
-		font-size: 0.95em;
+		font-size: 0.8125em; 
 		font-weight: bold;
 
 		background: @tab_marker_label_bg; //default background for tab-markers, greenish
 		color: @tab_content_bg; //whitish
+		text-align: center;
+		line-height: 1.65;
 
-		-webkit-transition: all 0.1s ease-in;
+		_margin-bottom: -2px;
+
+		// -webkit-transition: background 0.1s linear;
 
 		i {
 
-			-webkit-transition: color 0.4s ease-in;
+			// -webkit-transition: color 0.1s ease-in-out;
 
 		}
 
 		span {
 
-			-webkit-transition: color 0.4s linear;
+			// -webkit-transition: color 0.1s ease-in-out;
 
 			&:after, &:before {
 
-				-webkit-transition: background 0.1s linear;
+				// -webkit-transition: background 0.1s linear;
 
 			}
 
@@ -254,7 +267,7 @@
 
 		svg {
 	
-			-webkit-transition: all .2s ease-in-out;
+			// -webkit-transition: fill 0.1s linear;
 
 		}
 
@@ -1583,7 +1596,7 @@
 
 } // END TAB DESIGN 8
 
-// TAB DESIGN 9, SVG
+// TAB DESIGN 9, 10, SVG (Both Sides)
 
 .tab-design-9, .tab-design-10 {
 
@@ -1721,6 +1734,143 @@
 
 } //END TAB DESIGN 9
 
+// TAB DESIGN 11, SVG (Right Side Only)
+
+.tab-design-11 {
+
+	.tab-marker  {
+
+		&.l-inline-list { //display tab-marker horizontally
+
+			> li {
+			
+				margin-right: 35px;
+
+				&:first-child {
+
+					margin-left: 0;	
+
+				}
+
+				&:last-child {
+
+					margin-right: 0; //last tab-marker has no margin-right
+
+				}
+
+			}
+			
+		}
+
+		&.l-vertical-list { //display tab-marker vertically
+
+			> li {
+
+				margin-right: 0; //no tab-marker margin-right
+				margin-bottom: 2px;  
+
+				&:last-child {
+
+					margin-bottom: 0; //the last tab-marker has no margin-bottom
+
+				}
+
+			}
+			
+		}
+
+		label { //general label settings
+
+			svg {
+
+				position: absolute;
+				height: 100%;
+				fill: @tab_marker_label_bg;
+
+				&.svg-left {
+
+					bottom: 0;
+					left: -25px;
+					width: 45px;
+					
+				}
+
+				&.svg-right {
+
+					bottom: 0;
+					right: -13px;
+					width: 45px;
+					-webkit-transform: rotateY(180deg);
+
+				}
+				
+			}
+		}
+
+		&.tab-marker-tight { //remove spacing between tab-markers
+
+			> li {
+
+				margin-right: 24px;
+				border-left: 0;
+			
+	  			label {
+
+					background: @tab_marker_label_bg;
+					color: @tab_content_bg;
+					border: none;
+
+	  			}
+
+	  			
+			}
+
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: none!important;
+					color: @text_color;
+
+				}
+
+				svg {
+
+					fill: rgba(0,0,0,0);
+
+	  			}
+			
+
+			}
+
+			&.tab-marker-tight-separator {
+				
+				svg {
+
+					stroke-width: 1px;
+					stroke: @tab_content_container_bc;
+
+				}
+
+
+			}
+
+			&.tab-marker-tight-overlap {
+
+				> li {
+
+					margin-right: -1px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+} //END TAB DESIGN 9
 
 
 

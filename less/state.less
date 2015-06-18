@@ -14,9 +14,25 @@
 
 .tab-marker label:hover {
 
-	// background: @label_hover_bg;
-	// color: @text_color;
+	background: @tab_content_bg !important;
+	color: @text_color !important;
 	cursor: pointer;
+	
+	-webkit-transition: color 0.3s ease-in;
+
+	z-index: 200000;
+
+	span:before, span:after {
+
+		background: @tab_content_bg !important;
+
+	}
+
+	svg {
+
+		fill: @tab_content_bg !important;
+
+	}
 
 }
 
@@ -34,7 +50,7 @@
 
 		background:  @tab_content_bg;
 		color: @border_color;
-		z-index: 100000;
+		z-index: 10000;
 
 	}
 
@@ -108,9 +124,9 @@
 
 }
 
-/* tab-design-4 */
+/* tab-design-4, 9, 10, 11 */
 
-.tab-design-4, .tab-design-9, .tab-design-10 {
+.tab-design-4, .tab-design-9, .tab-design-10, .tab-design-11 {
 
 	.tab-marker { 
 
