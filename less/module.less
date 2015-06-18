@@ -232,21 +232,21 @@
 		background: @tab_marker_label_bg; //default background for tab-markers, greenish
 		color: @tab_content_bg; //whitish
 
-		-webkit-transition: all 0.1s ease-in-out;
+		-webkit-transition: all 0.1s ease-in;
 
 		i {
 
-			-webkit-transition: all 0.1s ease-in-out;
+			-webkit-transition: color 0.4s ease-in;
 
 		}
 
 		span {
 
-			-webkit-transition: all 0.1s ease-in-out;
+			-webkit-transition: color 0.4s linear;
 
 			&:after, &:before {
 
-				-webkit-transition: all 0.1s ease-in-out;
+				-webkit-transition: background 0.1s linear;
 
 			}
 
@@ -254,7 +254,7 @@
 
 		svg {
 	
-			-webkit-transition: all 0.1s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
 
 		}
 
@@ -1582,6 +1582,144 @@
 	} // tab-marker
 
 } // END TAB DESIGN 8
+
+// TAB DESIGN 9, SVG
+
+.tab-design-9, .tab-design-10 {
+
+	.tab-marker  {
+
+		&.l-inline-list { //display tab-marker horizontally
+
+			> li {
+			
+				margin-right: 60px;
+
+				&:first-child {
+
+					margin-left: 25px;	
+
+				}
+
+				&:last-child {
+
+					margin-right: 0; //last tab-marker has no margin-right
+
+				}
+
+			}
+			
+		}
+
+		&.l-vertical-list { //display tab-marker vertically
+
+			> li {
+
+				margin-right: 0; //no tab-marker margin-right
+				margin-bottom: 2px;  
+
+				&:last-child {
+
+					margin-bottom: 0; //the last tab-marker has no margin-bottom
+
+				}
+
+			}
+			
+		}
+
+		label { //general label settings
+
+			svg {
+
+				position: absolute;
+				height: 100%;
+				fill: @tab_marker_label_bg;
+
+				&.svg-left {
+
+					bottom: 0;
+					left: -25px;
+					width: 45px;
+					
+				}
+
+				&.svg-right {
+
+					bottom: 0;
+					right: -25px;
+					width: 45px;
+					-webkit-transform: rotateY(180deg);
+
+				}
+				
+			}
+		}
+
+		&.tab-marker-tight { //remove spacing between tab-markers
+
+			> li {
+
+				margin-right: 54px;
+				border-left: 0;
+			
+	  			label {
+
+					background: @tab_marker_label_bg;
+					color: @tab_content_bg;
+					border: none;
+
+	  			}
+
+	  			
+			}
+
+			&.tab-marker-tight-transparent {
+
+				label {
+
+					background: rgba(0,0,0,0);
+					border: none!important;
+					color: @text_color;
+
+				}
+
+				svg {
+
+					fill: rgba(0,0,0,0);
+
+	  			}
+			
+
+			}
+
+			&.tab-marker-tight-separator {
+				
+				svg {
+
+					stroke-width: 1px;
+					stroke: @tab_content_container_bc;
+
+				}
+
+
+			}
+
+			&.tab-marker-tight-overlap {
+
+				> li {
+
+					margin-right: 11px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+} //END TAB DESIGN 9
 
 
 

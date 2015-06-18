@@ -127,20 +127,20 @@
   font-weight: bold;
   background: #2cc185;
   color: #f9f9f9;
-  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in;
 }
 .tab-marker label i {
-  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition: color 0.4s ease-in;
 }
 .tab-marker label span {
-  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition: color 0.4s linear;
 }
 .tab-marker label span:after,
 .tab-marker label span:before {
-  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition: background 0.1s linear;
 }
 .tab-marker label svg {
-  -webkit-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .tab-design-1 .tab-marker.l-inline-list > li {
   margin-right: 10px;
@@ -677,6 +677,76 @@
 }
 .tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: 0;
+}
+.tab-design-9 .tab-marker.l-inline-list > li,
+.tab-design-10 .tab-marker.l-inline-list > li {
+  margin-right: 60px;
+}
+.tab-design-9 .tab-marker.l-inline-list > li:first-child,
+.tab-design-10 .tab-marker.l-inline-list > li:first-child {
+  margin-left: 25px;
+}
+.tab-design-9 .tab-marker.l-inline-list > li:last-child,
+.tab-design-10 .tab-marker.l-inline-list > li:last-child {
+  margin-right: 0;
+}
+.tab-design-9 .tab-marker.l-vertical-list > li,
+.tab-design-10 .tab-marker.l-vertical-list > li {
+  margin-right: 0;
+  margin-bottom: 2px;
+}
+.tab-design-9 .tab-marker.l-vertical-list > li:last-child,
+.tab-design-10 .tab-marker.l-vertical-list > li:last-child {
+  margin-bottom: 0;
+}
+.tab-design-9 .tab-marker label svg,
+.tab-design-10 .tab-marker label svg {
+  position: absolute;
+  height: 100%;
+  fill: #2cc185;
+}
+.tab-design-9 .tab-marker label svg.svg-left,
+.tab-design-10 .tab-marker label svg.svg-left {
+  bottom: 0;
+  left: -25px;
+  width: 45px;
+}
+.tab-design-9 .tab-marker label svg.svg-right,
+.tab-design-10 .tab-marker label svg.svg-right {
+  bottom: 0;
+  right: -25px;
+  width: 45px;
+  -webkit-transform: rotateY(180deg);
+}
+.tab-design-9 .tab-marker.tab-marker-tight > li,
+.tab-design-10 .tab-marker.tab-marker-tight > li {
+  margin-right: 54px;
+  border-left: 0;
+}
+.tab-design-9 .tab-marker.tab-marker-tight > li label,
+.tab-design-10 .tab-marker.tab-marker-tight > li label {
+  background: #2cc185;
+  color: #f9f9f9;
+  border: none;
+}
+.tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label,
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label {
+  background: rgba(0, 0, 0, 0);
+  border: none!important;
+  color: #444444;
+}
+.tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg,
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg {
+  fill: rgba(0, 0, 0, 0);
+}
+.tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg,
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
+  stroke-width: 1px;
+  stroke: rgba(52, 52, 52, 0.1);
+}
+.tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li,
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
+  margin-right: 11px;
 }
 /* tab-content-container */
 .tab-content-container {
