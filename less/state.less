@@ -36,11 +36,56 @@
 
 }
 
+.tab-design-2, .tab-design-8 {
+
+	.tab-marker.tab-marker-tight-transparent label:hover {
+
+		background: @tab_content_bg !important;
+		color: @text_color !important;
+		cursor: pointer;
+		
+		-webkit-transition: color 0.3s ease-in;
+
+		z-index: 200000;
+
+		span:before, span:after {
+
+			background: @tab_content_bg !important;
+
+		}
+
+		svg {
+
+			fill: @tab_content_bg !important;
+
+		}
+
+	}
+	
+}
+
+.tab-design-4 {
+
+	.tab-marker.tab-marker-tight-separator label:hover {
+
+		svg {
+
+			stroke: @tab_content_bg;
+
+		}
+
+	}
+	
+}
+
+
 .is-tab-active {
 
 	display: list-item;
 
 }
+
+/* checked, active tab-markers */
 
 /* tab-design-1, tab-design-6 */
 
@@ -138,9 +183,10 @@
 				color: @border_color !important;
 				z-index: 10000;
 
-				.svg-left, .svg-right {
+				svg {
 
 					fill: @tab_content_bg;
+					stroke: @tab_content_bg;
 
 				}
 

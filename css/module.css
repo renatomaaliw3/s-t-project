@@ -85,22 +85,15 @@
 #wrapper {
   width: 88.5%;
   _width: 1110px;
-  margin: 30px auto 0 auto;
+  margin: 15px auto 0 auto;
 }
 #header,
 .tab-main-container {
   width: 100%;
 }
 .tab-main-container-padded {
-  padding: 0.5em;
-  background: #29b27b;
-}
-.tab-main-container-padded-1 {
   padding: 1em;
   background: #29b27b;
-}
-.tab-main-container-rounded {
-  border-radius: 6px;
 }
 /* Tabs */
 .tabs {
@@ -127,7 +120,7 @@
   position: relative;
   display: block;
   padding: 1em 1.5em;
-  font-size: 0.8125em;
+  font-size: 0.85em;
   font-weight: bold;
   background: #2cc185;
   color: #f9f9f9;
@@ -338,12 +331,12 @@
 }
 .tab-design-4 .tab-marker label svg.svg-left {
   bottom: 0;
-  left: -44px;
+  left: -42px;
   width: 45px;
 }
 .tab-design-4 .tab-marker label svg.svg-right {
   bottom: 0;
-  right: -44px;
+  right: -42px;
   width: 45px;
   -webkit-transform: rotateY(180deg);
 }
@@ -367,6 +360,7 @@
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
   stroke-width: 1px;
   stroke: rgba(52, 52, 52, 0.1);
+  z-index: -600000;
 }
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: 32px;
@@ -520,7 +514,7 @@
   -webkit-transform: skew(-15deg);
 }
 .tab-design-6 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 6px;
+  margin-left: 7px;
 }
 .tab-design-6 .tab-marker.l-inline-list > li:last-child {
   margin-right: 0;
@@ -636,9 +630,9 @@
   content: "";
   position: absolute;
   background: #2cc185;
-  right: -13px;
+  right: -14px;
   bottom: 0;
-  width: 14px;
+  width: 15px;
   height: 50%;
 }
 .tab-design-8 .tab-marker.tab-marker-tight > li {
@@ -813,4 +807,13 @@
   display: none;
   padding: 1.15em 1.65em 1.25em 1.65em;
   background: #f9f9f9;
+}
+form label {
+  float: left;
+  width: 100px;
+  padding: 0.25em 0;
+  display: block;
+}
+form div {
+  margin: 0.25em 0;
 }

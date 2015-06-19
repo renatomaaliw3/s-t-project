@@ -27,9 +27,31 @@
 .tab-marker label:hover svg {
   fill: #f9f9f9 !important;
 }
+.tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover,
+.tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover {
+  background: #f9f9f9 !important;
+  color: #444444 !important;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in;
+  z-index: 200000;
+}
+.tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover span:before,
+.tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover span:before,
+.tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover span:after,
+.tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover span:after {
+  background: #f9f9f9 !important;
+}
+.tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover svg,
+.tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover svg {
+  fill: #f9f9f9 !important;
+}
+.tab-design-4 .tab-marker.tab-marker-tight-separator label:hover svg {
+  stroke: #f9f9f9;
+}
 .is-tab-active {
   display: list-item;
 }
+/* checked, active tab-markers */
 /* tab-design-1, tab-design-6 */
 .tab-design-1 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-6 .tab-marker [type="radio"]:checked ~ label,
@@ -71,15 +93,12 @@
   color: #2cc185 !important;
   z-index: 10000;
 }
-.tab-design-4 .tab-marker [type="radio"]:checked ~ label .svg-left,
-.tab-design-9 .tab-marker [type="radio"]:checked ~ label .svg-left,
-.tab-design-10 .tab-marker [type="radio"]:checked ~ label .svg-left,
-.tab-design-11 .tab-marker [type="radio"]:checked ~ label .svg-left,
-.tab-design-4 .tab-marker [type="radio"]:checked ~ label .svg-right,
-.tab-design-9 .tab-marker [type="radio"]:checked ~ label .svg-right,
-.tab-design-10 .tab-marker [type="radio"]:checked ~ label .svg-right,
-.tab-design-11 .tab-marker [type="radio"]:checked ~ label .svg-right {
+.tab-design-4 .tab-marker [type="radio"]:checked ~ label svg,
+.tab-design-9 .tab-marker [type="radio"]:checked ~ label svg,
+.tab-design-10 .tab-marker [type="radio"]:checked ~ label svg,
+.tab-design-11 .tab-marker [type="radio"]:checked ~ label svg {
   fill: #f9f9f9;
+  stroke: #f9f9f9;
 }
 /* tab-design-5 */
 .tab-design-5 .tab-marker [type="radio"]:checked ~ label {

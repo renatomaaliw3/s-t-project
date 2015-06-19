@@ -7,9 +7,9 @@
     <meta name="description" content="website_content">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="css/styles.css" type="text/css">                                       <!-- css styles, base, layout, module, state -->
-    <link rel="stylesheet" href="css/_theme-10.css" type="text/css" id="themes">                        <!-- theme stylesheet, choose from avaialbe in CSS folder, theme-xx.css -->
+    <!-- <link rel="stylesheet" href="css/_theme-10.css" type="text/css" id="themes"> -->                        <!-- theme stylesheet, choose from avaialbe in CSS folder, theme-xx.css -->
     <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" type="text/css">      <!-- font-awesome -->
-    <link rel="stylesheet" href="css/_theme-changer.css" type="text/css">                               <!-- theme-changer-style-sheet, remove this line together with div#theme-changer -->
+    <!-- <link rel="stylesheet" href="css/_theme-changer.css" type="text/css">  -->                              <!-- theme-changer-style-sheet, remove this line together with div#theme-changer -->
     <link rel="stylesheet" href="css/media.css" type="text/css">                                        <!-- media query style sheet -->
     <script src="js/vendor/modernizr.js" type="text/javascript"></script>  
 </head>
@@ -27,77 +27,104 @@
 
 <!-- tab design -->
 
-<div id="header">
+<div class="l-group" style="font-size: 0.75em;">
 
-        <h3 class="theme-margin-bottom"> SOLID - Tabtopia, Responsive Tabs </h3>
+        <form style="positon:absolute; margin: 15px 0 30px 0;">
+            
+            <div>
+                <label style="font-weight: bold;"> Select Design: </label> 
+                <select id="tab-design-changer" style="padding: 0.25em 0.5em; min-width: 250px; margin-left: 0.5em;">
+
+                    <option value="tab-design-1"> Tab Design 1 </option>
+                    <option value="tab-design-2"> Tab Design 2 </option>
+                    <option value="tab-design-3"> Tab Design 3 </option>
+                    <option value="tab-design-4"> Tab Design 4 </option>
+                    <option value="tab-design-5"> Tab Design 5 </option>
+                    <option value="tab-design-6"> Tab Design 6 </option>
+                    <option value="tab-design-7"> Tab Design 7 </option>
+                    <option value="tab-design-8"> Tab Design 8 </option>
+                    <option value="tab-design-9"> Tab Design 9 </option>
+                    <option value="tab-design-10"> Tab Design 10 </option>
+                    <option value="tab-design-11"> Tab Design 11 </option>
+
+                </select>
+            </div>
+            <div>
+                <label style="font-weight: bold;"> Background: </label> 
+                <select id="tab-background-changer" style="padding: 0.25em 0.5em; min-width: 250px; margin-left: 0.5em;">
+
+                    <option value="no-background"> No Background </option>
+                    <option value="tab-main-container-padded"> With Background </option>
+                
+                </select>
+            </div>
+            <div>
+                <label style="font-weight: bold;"> Spacing: </label> 
+                <select id="tab-spacing-changer" style="padding: 0.25em 0.5em; min-width: 250px; margin-left: 0.5em;">
+
+                    <option value="normal-spacing"> Normal </option>
+                    <option value="tab-marker-tight"> Tight </option>
+                
+                </select>
+                <select id="tab-tight-options" style="padding: 0.25em 0.5em; min-width: 250px; margin-left: 0.5em; display: none;">
+
+                    <option value="normal-spacing"> No Tight Spacing Option </option>
+                    <option value="tab-marker-tight-overlap"> Overlap (No Border Separator) </option>
+                    <option value="tab-marker-tight-separator"> Overlap (With Border Separator) </option>
+                    <option value="tab-marker-tight-transparent"> Transparent Inactive Markers </option>
+                
+                </select>
+            </div>
+            <div>
+                <label style="font-weight: bold;"> Rounding: </label> 
+                <select id="tab-rounding-changer" style="padding: 0.25em 0.5em; min-width: 250px; margin-left: 0.5em;">
+
+                    <option value="no-rounding"> None </option>
+                    <option value="tab-marker-rounded-top"> Rounded Top </option>
+                
+                </select>
+            </div>
+
+        </form>
+
+        <!-- <h3 class="theme-margin-bottom"> SOLID - Tabtopia, Responsive Tabs </h3> -->
 
 </div>
+<div id="temporary-container" style="clear: both;">
 
-<!-- tab design 11, svg -->
+<!-- tab design 2 -->
 
-<div class="tab-main-container _tab-main-container-padded tab-design-11">
+<div class="tab-main-container _tab-main-container-padded tab-design-2">
 
     <ul class="tabs l-group">
 
         <!-- tab markers -->
         <li class="tab-menu _text-center"> <!-- text center, text-right -->
 
-                <ul class="l-inline-list tab-marker tab-marker-tight _tab-marker-tight-transparent tab-marker-tight-overlap l-group">
+                <ul class="l-inline-list tab-marker _tab-marker-tight _tab-marker-tight-transparent _tab-marker-tight-separator _tab-marker-tight-overlap _tab-marker-rounded-top l-group">
 
                     <li>
 
                         <input type="radio" name="tab-group-1" id="tab-1" class="tab-1" checked> <!-- checked, is the default active tab -->
-                        <label for="tab-1"><i class="fa fa-star fa-fg"></i>
-                        
-                            <span> Tab - 1 </span>
-
-                            <svg viewBox="0 0 50 44" preserveAspectRatio="none" class="svg-right">
-                              <polygon points="10.032,19.047 9.942,15.534 10.004,0 18.996,0 18.996,46 0,46 0.004,46 0.004,26.058 "/>
-                            </svg>
-
-                        </label>
+                        <label for="tab-1"><i class="fa fa-star fa-fg"></i><span> Tab - 1 </span></label>
               
                     </li>
                     <li>
 
                         <input type="radio" name="tab-group-1" id="tab-2" class="tab-2">
-                        <label for="tab-2"><i class="fa fa-heart fa-fg"></i>
-
-                            <span> Tab - 2 </span>
-
-                            <svg viewBox="0 0 50 44" preserveAspectRatio="none" class="svg-right">
-                              <polygon points="10.032,19.047 9.942,15.534 10.004,0 18.996,0 18.996,46 0,46 0.004,46 0.004,26.058 "/>
-                            </svg>
-
-                        </label>
+                        <label for="tab-2"><i class="fa fa-heart fa-fg"></i><span>  Tab - 2 </span></label>
 
                     </li>
                     <li>
 
                         <input type="radio" name="tab-group-1" id="tab-3" class="tab-3">
-                        <label for="tab-3"><i class="fa fa-bookmark fa-fg"></i>
-
-                            <span> Tab - 3 </span>
-
-                            <svg viewBox="0 0 50 44" preserveAspectRatio="none" class="svg-right">
-                              <polygon points="10.032,19.047 9.942,15.534 10.004,0 18.996,0 18.996,46 0,46 0.004,46 0.004,26.058 "/>
-                            </svg>
-
-                        </label>
+                        <label for="tab-3"><i class="fa fa-bookmark fa-fg"></i><span>  Tab - 3 </span></label>
 
                     </li>
                     <li>
 
                         <input type="radio" name="tab-group-1" id="tab-4" class="tab-4">
-                        <label for="tab-4"><i class="fa fa-trophy fa-fg"></i>
-
-                            <span> Tab - 4 </span>
-
-                            <svg viewBox="0 0 50 44" preserveAspectRatio="none" class="svg-right">
-                              <polygon points="10.032,19.047 9.942,15.534 10.004,0 18.996,0 18.996,46 0,46 0.004,46 0.004,26.058 "/>
-                            </svg>
-
-                        </label>
+                        <label for="tab-4"><i class="fa fa-trophy fa-fg"></i><span>  Tab - 4 </span></label>
 
                     </li>
 
@@ -110,7 +137,7 @@
             
             <ul>
 
-                <li class="tab-content animated _animated-hingeUp tab-1 is-tab-active">
+                <li class="tab-content animated tab-1 is-tab-active">
 
                     <div>
 
@@ -153,7 +180,7 @@
                     </div>
 
                 </li>
-                <li class="tab-content animated _animated-hingeUp tab-2">
+                <li class="tab-content animated tab-2">
 
                     <div>
 
@@ -196,7 +223,7 @@
                     </div>
 
                 </li>
-                <li class="tab-content animated _animated-hingeUp tab-3">
+                <li class="tab-content animated tab-3">
 
                     <div>
 
@@ -239,7 +266,7 @@
                     </div>
 
                 </li>
-                <li class="tab-content animated _animated-hingeUp tab-4">
+                <li class="tab-content animated tab-4">
 
                     <div>
 
@@ -289,6 +316,7 @@
 
 </div>
 
+</div> <!-- end temporary-container -->
 </div> <!-- end wrapper -->
 <script src="js/vendor/jquery-1.11.1.min.js" type="text/javascript"></script>   <!-- jquery library -->
 <script src="js/vendor/mq.genie.min.js" type="text/javascript"></script>        <!-- media query fix, scrollbar bug -->
