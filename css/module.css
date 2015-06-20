@@ -121,12 +121,12 @@
   position: relative;
   display: block;
   padding: 1em 1.5em;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: bold;
   background: #3a5795;
   color: #ffffff;
   text-align: center;
-  line-height: 1.65;
+  line-height: 1.6;
   _margin-bottom: -2px;
 }
 .tab-design-1 .tab-marker.l-inline-list > li {
@@ -155,8 +155,8 @@
   color: #3a5795;
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
-  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-1 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -212,8 +212,8 @@
   background: rgba(0, 0, 0, 0);
 }
 .tab-design-2 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-2 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -290,7 +290,7 @@
   background: rgba(0, 0, 0, 0);
 }
 .tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label span:before {
-  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-3 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label span:before {
   border-left: 0;
@@ -308,7 +308,7 @@
   border-top-right-radius: 6px;
 }
 .tab-design-4 .tab-marker.l-inline-list > li {
-  margin-right: 80px;
+  margin-right: 65px;
 }
 .tab-design-4 .tab-marker.l-inline-list > li:first-child {
   margin-left: 40px;
@@ -340,7 +340,7 @@
   -webkit-transform: rotateY(180deg);
 }
 .tab-design-4 .tab-marker.tab-marker-tight > li {
-  margin-right: 60px;
+  margin-right: 55px;
   border-left: 0;
 }
 .tab-design-4 .tab-marker.tab-marker-tight > li label {
@@ -359,7 +359,6 @@
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
   stroke-width: 1px;
   stroke: rgba(52, 52, 52, 0.1);
-  z-index: -600000;
 }
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: 32px;
@@ -490,8 +489,8 @@
   background: none;
 }
 .tab-design-5 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-5 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -537,8 +536,8 @@
   color: #3a5795;
 }
 .tab-design-6 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-6 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -571,7 +570,7 @@
   margin-bottom: 0;
 }
 .tab-design-7 .tab-marker.tab-marker-tight > li {
-  margin-right: 2px;
+  margin-right: 4px;
   border-left: 0;
 }
 .tab-design-7 .tab-marker.tab-marker-tight > li label {
@@ -583,8 +582,8 @@
   color: #3a5795;
 }
 .tab-design-7 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-7 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -593,7 +592,7 @@
   border-right: 0;
 }
 .tab-design-7 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
-  margin-right: -6px;
+  margin-right: -8px;
 }
 .tab-design-7 .tab-marker.tab-marker-rounded-top label {
   margin-right: 1px;
@@ -649,8 +648,8 @@
   background: rgba(0, 0, 0, 0);
 }
 .tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-right: 1px solid rgba(52, 52, 52, 0.1);
-  border-left: 1px solid rgba(52, 52, 52, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-8 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child label {
   border-left: 0;
@@ -779,6 +778,9 @@
 }
 .tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg {
   fill: rgba(0, 0, 0, 0);
+}
+.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
 }
 .tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label svg {
   stroke: rgba(52, 52, 52, 0.1);

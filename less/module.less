@@ -199,7 +199,7 @@
 
 	i { //font awesome icon
 
-		 margin: 0.1em 0.5em 0 0.15em;
+		margin: 0.1em 0.5em 0 0.15em;
   		padding: 0 0.1em 0 0; 
 
 	}
@@ -221,13 +221,13 @@
 		position: relative;
 		display: block;
 		padding: 1em 1.5em;
-		font-size: 0.85em; 
+		font-size: 0.8em; 
 		font-weight: bold;
 
 		background: @tab_marker_label_bg; //default background for tab-markers, greenish
 		color: @tab_content_bg; //whitish
 		text-align: center;
-		line-height: 1.65;
+		line-height: 1.6;
 
 		_margin-bottom: -2px;
 
@@ -491,8 +491,8 @@
 
 					label {
 
-		  				border-right: 1px solid @tab_content_container_bc;
-		  				border-left: 1px solid @tab_content_container_bc;
+		  				border-right: 1px solid @border_separator;
+		  				border-left: 1px solid @border_separator;
 		  				
 					}
 					
@@ -759,7 +759,7 @@
 
 			> li {
 			
-				margin-right: 80px;
+				margin-right: 65px;
 
 				&:first-child {
 
@@ -826,7 +826,7 @@
 
 			> li {
 
-				margin-right: 60px;
+				margin-right: 55px;
 				border-left: 0;
 			
 	  			label {
@@ -865,7 +865,6 @@
 
 					stroke-width: 1px;
 					stroke: @tab_content_container_bc;
-					z-index: -600000;
 
 				}
 
@@ -1102,8 +1101,8 @@
 
 					label {
 
-		  				border-right: 1px solid @tab_content_container_bc;
-		  				border-left: 1px solid @tab_content_container_bc;
+		  				border-right: 1px solid @border_separator;
+		  				border-left: 1px solid @border_separator;
 		  				
 					}
 					
@@ -1240,8 +1239,8 @@
 
 					label {
 
-		  				border-right: 1px solid @tab_content_container_bc;
-		  				border-left: 1px solid @tab_content_container_bc;
+		  				border-right: 1px solid @border_separator;
+		  				border-left: 1px solid @border_separator;
 
 					}
 					
@@ -1344,7 +1343,7 @@
 
 			> li {
 
-				margin-right: 2px;
+				margin-right: 4px;
 				border-left: 0;
 			
 	  			label {
@@ -1373,8 +1372,8 @@
 
 					label {
 
-		  				border-right: 1px solid @tab_content_container_bc;
-		  				border-left: 1px solid @tab_content_container_bc;
+		  				border-right: 1px solid @border_separator;
+		  				border-left: 1px solid @border_separator;
 
 					}
 					
@@ -1403,7 +1402,7 @@
 
 				> li {
 
-					margin-right: -6px;
+					margin-right: -8px;
 
 				}
 
@@ -1541,8 +1540,8 @@
 
 					label {
 
-		  				border-right: 1px solid @tab_content_container_bc;
-		  				border-left: 1px solid @tab_content_container_bc;
+		  				border-right: 1px solid @border_separator;
+		  				border-left: 1px solid @border_separator;
 		  				
 					}
 					
@@ -1835,6 +1834,8 @@
 				> li {
 
 					label {
+
+						border-left: 1px solid @border_separator;
 
 						svg {
 
