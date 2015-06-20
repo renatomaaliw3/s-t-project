@@ -78,6 +78,28 @@
 	
 }
 
+.tab-design-11 {
+
+	.tab-marker.tab-marker-tight-overlap.tab-marker-tight-separator  {
+
+		> li {
+
+			label:hover {
+
+				svg {
+
+					stroke: none;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 
 .is-tab-active {
 
@@ -94,7 +116,7 @@
 	.tab-marker [type="radio"]:checked ~ label {
 
 		background:  @tab_content_bg;
-		color: @border_color;
+		color: @text_color;
 		z-index: 10000;
 
 	}
@@ -112,7 +134,7 @@
 			~ label {
 
 				background:  @tab_content_bg !important;
-				color: @border_color !important;
+				color: @text_color !important;
 				z-index: 10000;
 
 				span:after {
@@ -146,7 +168,7 @@
 			~ label {
 
 				background:  @tab_content_bg !important;
-				color: @border_color !important;
+				color: @text_color !important;
 				z-index: 10000;
 
 				span:after {
@@ -180,13 +202,13 @@
 			~ label {
 
 				background:  @tab_content_bg !important;
-				color: @border_color !important;
+				color: @text_color !important;
 				z-index: 10000;
 
 				svg {
 
 					fill: @tab_content_bg;
-					stroke: @tab_content_bg;
+					stroke: none;
 
 				}
 
@@ -210,7 +232,7 @@
 			~ label {
 
 				background:  @tab_content_bg !important;
-				color: @border_color !important;
+				color: @text_color !important;
 				z-index: 10000;
 
 				span:after {
@@ -244,7 +266,7 @@
 			~ label {
 
 				background:  @tab_content_bg !important;
-				color: @border_color !important;
+				color: @text_color !important;
 				z-index: 10000;
 
 				span:after {

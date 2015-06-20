@@ -167,7 +167,7 @@
 .tab-main-container-padded {
 
 	padding: 1em;
-	background: darken(@tab_marker_label_bg, 3.5%);
+	background: darken(@tab_marker_label_bg, 22.5%);
 	
 }
 
@@ -197,9 +197,10 @@
 
 	line-height: 0;
 
-	i {
+	i { //font awesome icon
 
-		margin-right: 0.75em; //font awesome icon
+		 margin: 0.1em 0.5em 0 0.15em;
+  		padding: 0 0.1em 0 0; 
 
 	}
 
@@ -321,7 +322,6 @@
 				label {
 
 					background: rgba(0,0,0,0);
-					border: 1px solid rgba(0,0,0,0) !important;
 					color: @text_color;
 
 				}
@@ -334,7 +334,6 @@
 
 					label {
 						
-						_border-top: 1px solid @border_separator;
 		  				border-right: 1px solid @border_separator;
 		  				border-left: 1px solid @border_separator;
 
@@ -353,7 +352,11 @@
 
 	  				&:last-child {
 
-						_border-right: 0;
+	  					label {
+
+	  						_border-right: 0;
+
+	  					}
 
 	  				}
 
@@ -566,7 +569,7 @@
 
 				&:first-child {
 
-					margin-left: 12px;	
+					margin-left: 13px;	
 
 				}
 
@@ -746,7 +749,7 @@
 
 } //END TAB DESIGN 3
 
-// TAB DESIGN 4, SVG
+// TAB DESIGN 4, SVG (Wide)
 
 .tab-design-4 {
 
@@ -1076,7 +1079,6 @@
 				label {
 
 					background: rgba(0,0,0,0);
-					border: 1px solid rgba(0,0,0,0) !important;
 					color: @text_color;
 
 					span {
@@ -1226,7 +1228,6 @@
 				label {
 
 					background: rgba(0,0,0,0);
-					border: 1px solid rgba(0,0,0,0) !important;
 					color: @text_color;
 
 				}
@@ -1360,7 +1361,6 @@
 				label {
 
 					background: rgba(0,0,0,0);
-					border: 1px solid rgba(0,0,0,0) !important;
 					color: @text_color;
 
 				}
@@ -1582,7 +1582,7 @@
 
 } // END TAB DESIGN 8
 
-// TAB DESIGN 9, 10, SVG (Both Sides)
+// TAB DESIGN 9, 10, SVG (Both Sides, Normal)
 
 .tab-design-9, .tab-design-10 {
 
@@ -1784,7 +1784,7 @@
 				&.svg-right {
 
 					bottom: 0;
-					right: -13px;
+					right: -15px;
 					width: 45px;
 					-webkit-transform: rotateY(180deg);
 
@@ -1832,12 +1832,30 @@
 
 			&.tab-marker-tight-separator {
 				
-				svg {
+				> li {
 
-					stroke-width: 1px;
-					stroke: @tab_content_container_bc;
+					label {
+
+						svg {
+
+							stroke: @tab_content_container_bc;
+
+						}
+
+					}
+
+					&:first-child, &:last-child {
+
+						svg {
+
+							stroke: none;
+
+						}
+
+					}
 
 				}
+				
 
 
 			}
@@ -1846,7 +1864,17 @@
 
 				> li {
 
-					margin-right: -1px;
+					margin-right: -2px;
+
+					&:first-child {
+
+						label {
+
+							border-right: 0;
+
+						}
+
+					}
 
 				}
 
@@ -1856,7 +1884,7 @@
 
 	}
 
-} //END TAB DESIGN 9
+} //END TAB DESIGN 11
 
 
 

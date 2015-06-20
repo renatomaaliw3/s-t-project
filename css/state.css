@@ -14,23 +14,23 @@
 */
 /* tab markers */
 .tab-marker label:hover {
-  background: #f9f9f9 !important;
-  color: #444444 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   cursor: pointer;
   -webkit-transition: color 0.3s ease-in;
   z-index: 200000;
 }
 .tab-marker label:hover span:before,
 .tab-marker label:hover span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-marker label:hover svg {
-  fill: #f9f9f9 !important;
+  fill: #ffffff !important;
 }
 .tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover,
 .tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover {
-  background: #f9f9f9 !important;
-  color: #444444 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   cursor: pointer;
   -webkit-transition: color 0.3s ease-in;
   z-index: 200000;
@@ -39,14 +39,17 @@
 .tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover span:before,
 .tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover span:after,
 .tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-design-2 .tab-marker.tab-marker-tight-transparent label:hover svg,
 .tab-design-8 .tab-marker.tab-marker-tight-transparent label:hover svg {
-  fill: #f9f9f9 !important;
+  fill: #ffffff !important;
 }
 .tab-design-4 .tab-marker.tab-marker-tight-separator label:hover svg {
-  stroke: #f9f9f9;
+  stroke: #ffffff;
+}
+.tab-design-11 .tab-marker.tab-marker-tight-overlap.tab-marker-tight-separator > li label:hover svg {
+  stroke: none;
 }
 .is-tab-active {
   display: list-item;
@@ -56,71 +59,71 @@
 .tab-design-1 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-6 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-7 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9;
-  color: #2cc185;
+  background: #ffffff;
+  color: #3a5795;
   z-index: 10000;
 }
 /* tab-design-2 */
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9 !important;
-  color: #2cc185 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   z-index: 10000;
 }
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-design-2 .tab-marker [type="radio"]:checked ~ label span:before {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 /* tab-design-3 */
 .tab-design-3 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9 !important;
-  color: #2cc185 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   z-index: 10000;
 }
 .tab-design-3 .tab-marker [type="radio"]:checked ~ label span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-design-3 .tab-marker [type="radio"]:checked ~ label span:before {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 /* tab-design-4, 9, 10, 11 */
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-9 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-10 .tab-marker [type="radio"]:checked ~ label,
 .tab-design-11 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9 !important;
-  color: #2cc185 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   z-index: 10000;
 }
 .tab-design-4 .tab-marker [type="radio"]:checked ~ label svg,
 .tab-design-9 .tab-marker [type="radio"]:checked ~ label svg,
 .tab-design-10 .tab-marker [type="radio"]:checked ~ label svg,
 .tab-design-11 .tab-marker [type="radio"]:checked ~ label svg {
-  fill: #f9f9f9;
-  stroke: #f9f9f9;
+  fill: #ffffff;
+  stroke: none;
 }
 /* tab-design-5 */
 .tab-design-5 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9 !important;
-  color: #2cc185 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   z-index: 10000;
 }
 .tab-design-5 .tab-marker [type="radio"]:checked ~ label span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-design-5 .tab-marker [type="radio"]:checked ~ label span:before {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 /* tab-design-8 */
 .tab-design-8 .tab-marker [type="radio"]:checked ~ label {
-  background: #f9f9f9 !important;
-  color: #2cc185 !important;
+  background: #ffffff !important;
+  color: #3a5795 !important;
   z-index: 10000;
 }
 .tab-design-8 .tab-marker [type="radio"]:checked ~ label span:after {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }
 .tab-design-8 .tab-marker [type="radio"]:checked ~ label span:before {
-  background: #f9f9f9 !important;
+  background: #ffffff !important;
 }

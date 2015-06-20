@@ -25,7 +25,7 @@ $(document).ready(function() { //if the DOM is ready
 
 		var _this = $(this);
 
-		var no_rounded_design = ['tab-design-4','tab-design-9','tab-design-10','tab-design-11'];
+		var no_rounded_design = ['tab-design-4','tab-design-8','tab-design-9','tab-design-10','tab-design-11'];
 
 		var tab_design_value = $('#tab-design-changer').val();
 		var background_value = $('#tab-background-changer').val();
