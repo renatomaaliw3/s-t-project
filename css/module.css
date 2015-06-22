@@ -94,6 +94,8 @@
 .tab-main-container-padded {
   padding: 1em;
   background: #1a2742;
+  position: relative;
+  z-index: 1;
 }
 /* Tabs */
 .tabs {
@@ -309,9 +311,10 @@
 }
 .tab-design-4 .tab-marker.l-inline-list > li {
   margin-right: 65px;
+  z-index: 2;
 }
 .tab-design-4 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 40px;
+  margin-left: 33px;
 }
 .tab-design-4 .tab-marker.l-inline-list > li:last-child {
   margin-right: 0;
@@ -327,6 +330,7 @@
   position: absolute;
   height: 100%;
   fill: #3a5795;
+  z-index: -1;
 }
 .tab-design-4 .tab-marker label svg.svg-left {
   bottom: 0;
@@ -357,8 +361,7 @@
   fill: rgba(0, 0, 0, 0);
 }
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
-  stroke-width: 1px;
-  stroke: rgba(52, 52, 52, 0.1);
+  stroke: rgba(0, 0, 0, 0.17);
 }
 .tab-design-4 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: 32px;
@@ -615,17 +618,17 @@
   content: "";
   position: absolute;
   background: #3a5795;
-  right: -7px;
+  right: -6px;
   top: 0;
   width: 14px;
   height: 50%;
-  -webkit-transform: skewX(28deg);
+  -webkit-transform: skewX(26deg);
 }
 .tab-design-8 .tab-marker label span:before {
   content: "";
   position: absolute;
   background: #3a5795;
-  right: -14px;
+  right: -12px;
   bottom: 0;
   width: 15px;
   height: 50%;
@@ -662,11 +665,11 @@
 }
 .tab-design-9 .tab-marker.l-inline-list > li,
 .tab-design-10 .tab-marker.l-inline-list > li {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 .tab-design-9 .tab-marker.l-inline-list > li:first-child,
 .tab-design-10 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 25px;
+  margin-left: 18px;
 }
 .tab-design-9 .tab-marker.l-inline-list > li:last-child,
 .tab-design-10 .tab-marker.l-inline-list > li:last-child {
@@ -690,19 +693,19 @@
 .tab-design-9 .tab-marker label svg.svg-left,
 .tab-design-10 .tab-marker label svg.svg-left {
   bottom: 0;
-  left: -25px;
+  left: -18px;
   width: 45px;
 }
 .tab-design-9 .tab-marker label svg.svg-right,
 .tab-design-10 .tab-marker label svg.svg-right {
   bottom: 0;
-  right: -25px;
+  right: -18px;
   width: 45px;
   -webkit-transform: rotateY(180deg);
 }
 .tab-design-9 .tab-marker.tab-marker-tight > li,
 .tab-design-10 .tab-marker.tab-marker-tight > li {
-  margin-right: 54px;
+  margin-right: 45px;
   border-left: 0;
 }
 .tab-design-9 .tab-marker.tab-marker-tight > li label,
@@ -724,11 +727,11 @@
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg,
 .tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
   stroke-width: 1px;
-  stroke: rgba(52, 52, 52, 0.1);
+  stroke: rgba(0, 0, 0, 0.17);
 }
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li,
 .tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
-  margin-right: 11px;
+  margin-right: 16px;
 }
 .tab-design-11 .tab-marker.l-inline-list > li {
   margin-right: 35px;
