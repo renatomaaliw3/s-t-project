@@ -618,19 +618,19 @@
   content: "";
   position: absolute;
   background: #3a5795;
-  right: -6px;
+  right: -7px;
   top: 0;
-  width: 14px;
+  width: 10%;
   height: 50%;
-  -webkit-transform: skewX(26deg);
+  -webkit-transform: skewX(19deg);
 }
 .tab-design-8 .tab-marker label span:before {
   content: "";
   position: absolute;
   background: #3a5795;
-  right: -12px;
+  right: -11px;
   bottom: 0;
-  width: 15px;
+  width: 10%;
   height: 50%;
 }
 .tab-design-8 .tab-marker.tab-marker-tight > li {
@@ -664,139 +664,102 @@
   margin-right: 0;
 }
 .tab-design-9 .tab-marker.l-inline-list > li,
-.tab-design-10 .tab-marker.l-inline-list > li {
-  margin-right: 50px;
+.tab-design-10 .tab-marker.l-inline-list > li,
+.tab-design-11 .tab-marker.l-inline-list > li,
+.tab-design-12 .tab-marker.l-inline-list > li {
+  margin-right: 30px;
 }
 .tab-design-9 .tab-marker.l-inline-list > li:first-child,
-.tab-design-10 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 18px;
+.tab-design-10 .tab-marker.l-inline-list > li:first-child,
+.tab-design-11 .tab-marker.l-inline-list > li:first-child,
+.tab-design-12 .tab-marker.l-inline-list > li:first-child {
+  margin-left: 9px;
 }
 .tab-design-9 .tab-marker.l-inline-list > li:last-child,
-.tab-design-10 .tab-marker.l-inline-list > li:last-child {
+.tab-design-10 .tab-marker.l-inline-list > li:last-child,
+.tab-design-11 .tab-marker.l-inline-list > li:last-child,
+.tab-design-12 .tab-marker.l-inline-list > li:last-child {
   margin-right: 0;
 }
 .tab-design-9 .tab-marker.l-vertical-list > li,
-.tab-design-10 .tab-marker.l-vertical-list > li {
+.tab-design-10 .tab-marker.l-vertical-list > li,
+.tab-design-11 .tab-marker.l-vertical-list > li,
+.tab-design-12 .tab-marker.l-vertical-list > li {
   margin-right: 0;
   margin-bottom: 2px;
 }
 .tab-design-9 .tab-marker.l-vertical-list > li:last-child,
-.tab-design-10 .tab-marker.l-vertical-list > li:last-child {
+.tab-design-10 .tab-marker.l-vertical-list > li:last-child,
+.tab-design-11 .tab-marker.l-vertical-list > li:last-child,
+.tab-design-12 .tab-marker.l-vertical-list > li:last-child {
   margin-bottom: 0;
 }
 .tab-design-9 .tab-marker label svg,
-.tab-design-10 .tab-marker label svg {
+.tab-design-10 .tab-marker label svg,
+.tab-design-11 .tab-marker label svg,
+.tab-design-12 .tab-marker label svg {
   position: absolute;
   height: 100%;
   fill: #3a5795;
+  width: 44px;
 }
 .tab-design-9 .tab-marker label svg.svg-left,
-.tab-design-10 .tab-marker label svg.svg-left {
+.tab-design-10 .tab-marker label svg.svg-left,
+.tab-design-11 .tab-marker label svg.svg-left,
+.tab-design-12 .tab-marker label svg.svg-left {
   bottom: 0;
-  left: -18px;
-  width: 45px;
+  left: -17px;
 }
 .tab-design-9 .tab-marker label svg.svg-right,
-.tab-design-10 .tab-marker label svg.svg-right {
+.tab-design-10 .tab-marker label svg.svg-right,
+.tab-design-11 .tab-marker label svg.svg-right,
+.tab-design-12 .tab-marker label svg.svg-right {
   bottom: 0;
-  right: -18px;
-  width: 45px;
+  right: -17px;
   -webkit-transform: rotateY(180deg);
 }
 .tab-design-9 .tab-marker.tab-marker-tight > li,
-.tab-design-10 .tab-marker.tab-marker-tight > li {
-  margin-right: 45px;
+.tab-design-10 .tab-marker.tab-marker-tight > li,
+.tab-design-11 .tab-marker.tab-marker-tight > li,
+.tab-design-12 .tab-marker.tab-marker-tight > li {
+  margin-right: 25px;
   border-left: 0;
 }
 .tab-design-9 .tab-marker.tab-marker-tight > li label,
-.tab-design-10 .tab-marker.tab-marker-tight > li label {
+.tab-design-10 .tab-marker.tab-marker-tight > li label,
+.tab-design-11 .tab-marker.tab-marker-tight > li label,
+.tab-design-12 .tab-marker.tab-marker-tight > li label {
   background: #3a5795;
   color: #ffffff;
   border: none;
 }
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label,
-.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label {
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label,
+.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label,
+.tab-design-12 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label {
   background: rgba(0, 0, 0, 0);
   border: none!important;
   color: #3a5795;
 }
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg,
-.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg {
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg,
+.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg,
+.tab-design-12 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg {
   fill: rgba(0, 0, 0, 0);
 }
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg,
-.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg,
+.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg,
+.tab-design-12 .tab-marker.tab-marker-tight.tab-marker-tight-separator svg {
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.17);
+  z-index: -1;
 }
 .tab-design-9 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li,
-.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
+.tab-design-10 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li,
+.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li,
+.tab-design-12 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
   margin-right: 16px;
-}
-.tab-design-11 .tab-marker.l-inline-list > li {
-  margin-right: 35px;
-}
-.tab-design-11 .tab-marker.l-inline-list > li:first-child {
-  margin-left: 0;
-}
-.tab-design-11 .tab-marker.l-inline-list > li:last-child {
-  margin-right: 0;
-}
-.tab-design-11 .tab-marker.l-vertical-list > li {
-  margin-right: 0;
-  margin-bottom: 2px;
-}
-.tab-design-11 .tab-marker.l-vertical-list > li:last-child {
-  margin-bottom: 0;
-}
-.tab-design-11 .tab-marker label svg {
-  position: absolute;
-  height: 100%;
-  fill: #3a5795;
-}
-.tab-design-11 .tab-marker label svg.svg-left {
-  bottom: 0;
-  left: -25px;
-  width: 45px;
-}
-.tab-design-11 .tab-marker label svg.svg-right {
-  bottom: 0;
-  right: -15px;
-  width: 45px;
-  -webkit-transform: rotateY(180deg);
-}
-.tab-design-11 .tab-marker.tab-marker-tight > li {
-  margin-right: 24px;
-  border-left: 0;
-}
-.tab-design-11 .tab-marker.tab-marker-tight > li label {
-  background: #3a5795;
-  color: #ffffff;
-  border: none;
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-transparent label {
-  background: rgba(0, 0, 0, 0);
-  border: none!important;
-  color: #3a5795;
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-transparent svg {
-  fill: rgba(0, 0, 0, 0);
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label {
-  border-left: 1px solid rgba(0, 0, 0, 0.17);
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li label svg {
-  stroke: rgba(52, 52, 52, 0.1);
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:first-child svg,
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-separator > li:last-child svg {
-  stroke: none;
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li {
-  margin-right: -2px;
-}
-.tab-design-11 .tab-marker.tab-marker-tight.tab-marker-tight-overlap > li:first-child label {
-  border-right: 0;
 }
 /* tab-content-container */
 .tab-content-container {

@@ -48,7 +48,8 @@
 .tab-design-4 .tab-marker.tab-marker-tight-separator label:hover svg {
   stroke: #ffffff;
 }
-.tab-design-11 .tab-marker.tab-marker-tight-overlap.tab-marker-tight-separator > li label:hover svg {
+.tab-design-9 .tab-marker.tab-marker-tight-overlap.tab-marker-tight-separator > li label:hover svg,
+.tab-design-10 .tab-marker.tab-marker-tight-overlap.tab-marker-tight-separator > li label:hover svg {
   stroke: none;
 }
 .is-tab-active {
